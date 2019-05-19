@@ -1,0 +1,1318 @@
+
+*** Running vivado
+    with args -log system.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source system.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+Sourcing tcl script '/home/pisit/.Xilinx/Vivado/Vivado_init.tcl'
+source system.tcl -notrace
+Command: synth_design -top system -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8209 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1389.094 ; gain = 6.875 ; free physical = 2713 ; free virtual = 9580
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'system' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:44]
+INFO: [Synth 8-6157] synthesizing module 'clock_generator' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/clock_generator.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clock_generator' (1#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/clock_generator.v:23]
+INFO: [Synth 8-6157] synthesizing module 'z80_top_direct_n' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/z80_top_direct_n.v:19]
+INFO: [Synth 8-6157] synthesizing module 'clk_delay' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/clk_delay.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'clk_delay' (2#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/clk_delay.v:32]
+INFO: [Synth 8-6157] synthesizing module 'decode_state' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/decode_state.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'decode_state' (3#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/decode_state.v:32]
+INFO: [Synth 8-6157] synthesizing module 'execute' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/execute.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'execute' (4#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/execute.v:38]
+INFO: [Synth 8-6157] synthesizing module 'interrupts' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/interrupts.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'interrupts' (5#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/interrupts.v:32]
+INFO: [Synth 8-6157] synthesizing module 'ir' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/ir.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'ir' (6#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/ir.v:32]
+INFO: [Synth 8-6157] synthesizing module 'pin_control' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/pin_control.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'pin_control' (7#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/pin_control.v:32]
+INFO: [Synth 8-6157] synthesizing module 'pla_decode' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/pla_decode.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'pla_decode' (8#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/pla_decode.v:17]
+INFO: [Synth 8-6157] synthesizing module 'resets' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/resets.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'resets' (9#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/resets.v:32]
+INFO: [Synth 8-6157] synthesizing module 'memory_ifc' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/memory_ifc.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'memory_ifc' (10#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/memory_ifc.v:32]
+INFO: [Synth 8-6157] synthesizing module 'sequencer' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/sequencer.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'sequencer' (11#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/sequencer.v:32]
+INFO: [Synth 8-6157] synthesizing module 'alu_control' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/alu_control.v:32]
+INFO: [Synth 8-6157] synthesizing module 'alu_mux_4' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/alu_mux_4.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'alu_mux_4' (12#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/alu_mux_4.v:32]
+INFO: [Synth 8-6157] synthesizing module 'alu_mux_8' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/alu_mux_8.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'alu_mux_8' (13#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/alu_mux_8.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'alu_control' (14#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/alu_control.v:32]
+INFO: [Synth 8-6157] synthesizing module 'alu_select' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/alu_select.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'alu_select' (15#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/alu_select.v:32]
+INFO: [Synth 8-6157] synthesizing module 'alu_flags' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/alu_flags.v:32]
+INFO: [Synth 8-6157] synthesizing module 'alu_mux_2' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/alu_mux_2.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'alu_mux_2' (16#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/alu_mux_2.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'alu_flags' (17#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/alu_flags.v:32]
+INFO: [Synth 8-6157] synthesizing module 'alu' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/alu.v:32]
+INFO: [Synth 8-6157] synthesizing module 'alu_core' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/alu_core.v:32]
+INFO: [Synth 8-6157] synthesizing module 'alu_slice' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/alu_slice.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'alu_slice' (18#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/alu_slice.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'alu_core' (19#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/alu_core.v:32]
+INFO: [Synth 8-6157] synthesizing module 'alu_bit_select' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/alu_bit_select.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'alu_bit_select' (20#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/alu_bit_select.v:32]
+INFO: [Synth 8-6157] synthesizing module 'alu_shifter_core' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/alu_shifter_core.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'alu_shifter_core' (21#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/alu_shifter_core.v:32]
+INFO: [Synth 8-6157] synthesizing module 'alu_mux_2z' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/alu_mux_2z.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'alu_mux_2z' (22#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/alu_mux_2z.v:32]
+INFO: [Synth 8-6157] synthesizing module 'alu_mux_3z' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/alu_mux_3z.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'alu_mux_3z' (23#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/alu_mux_3z.v:32]
+INFO: [Synth 8-6157] synthesizing module 'alu_prep_daa' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/alu_prep_daa.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'alu_prep_daa' (24#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/alu_prep_daa.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (25#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/alu.v:32]
+INFO: [Synth 8-6157] synthesizing module 'reg_file' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/reg_file.v:32]
+INFO: [Synth 8-6157] synthesizing module 'reg_latch' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/reg_latch.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'reg_latch' (26#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/reg_latch.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'reg_file' (27#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/reg_file.v:32]
+INFO: [Synth 8-6157] synthesizing module 'reg_control' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/reg_control.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'reg_control' (28#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/reg_control.v:32]
+INFO: [Synth 8-6157] synthesizing module 'address_latch' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/address_latch.v:32]
+INFO: [Synth 8-6157] synthesizing module 'address_mux' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/address_mux.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'address_mux' (29#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/address_mux.v:32]
+INFO: [Synth 8-6157] synthesizing module 'inc_dec' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/inc_dec.v:32]
+INFO: [Synth 8-6157] synthesizing module 'inc_dec_2bit' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/inc_dec_2bit.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'inc_dec_2bit' (30#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/inc_dec_2bit.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'inc_dec' (31#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/inc_dec.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'address_latch' (32#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/address_latch.v:32]
+INFO: [Synth 8-6157] synthesizing module 'bus_control' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/bus_control.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'bus_control' (33#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/bus_control.v:32]
+INFO: [Synth 8-6157] synthesizing module 'bus_switch' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/bus_switch.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'bus_switch' (34#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/bus_switch.v:25]
+INFO: [Synth 8-6157] synthesizing module 'data_switch' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/data_switch.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'data_switch' (35#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/data_switch.v:32]
+INFO: [Synth 8-6157] synthesizing module 'data_switch_mask' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/data_switch_mask.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'data_switch_mask' (36#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/data_switch_mask.v:32]
+INFO: [Synth 8-6157] synthesizing module 'address_pins' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/address_pins.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'address_pins' (37#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/address_pins.v:32]
+INFO: [Synth 8-6157] synthesizing module 'data_pins' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/data_pins.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'data_pins' (38#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/data_pins.v:32]
+INFO: [Synth 8-6157] synthesizing module 'control_pins_n' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/control_pins_n.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'control_pins_n' (39#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/control_pins_n.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'z80_top_direct_n' (40#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/z80_top_direct_n.v:19]
+INFO: [Synth 8-6157] synthesizing module 'ram' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/ram.v:22]
+	Parameter n bound to: 14 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'ram.mif' is read successfully [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/ram.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'ram' (41#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/ram.v:22]
+INFO: [Synth 8-6157] synthesizing module 'seven_seg_display' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/seven_seg_display.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/clock_divider.v:23]
+	Parameter PERIOD bound to: 41 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (42#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/clock_divider.v:23]
+INFO: [Synth 8-6157] synthesizing module 'hex_to_seven_seg' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/hex_to_seven_seg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'hex_to_seven_seg' (43#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/hex_to_seven_seg.v:23]
+WARNING: [Synth 8-567] referenced signal 'num3' should be on the sensitivity list [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/seven_seg_display.v:62]
+WARNING: [Synth 8-567] referenced signal 'num2' should be on the sensitivity list [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/seven_seg_display.v:62]
+WARNING: [Synth 8-567] referenced signal 'num1' should be on the sensitivity list [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/seven_seg_display.v:62]
+WARNING: [Synth 8-567] referenced signal 'num0' should be on the sensitivity list [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/seven_seg_display.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'seven_seg_display' (44#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/seven_seg_display.v:23]
+WARNING: [Synth 8-3848] Net uart_tx in module/entity system does not have driver. [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:59]
+WARNING: [Synth 8-3848] Net led in module/entity system does not have driver. [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:54]
+WARNING: [Synth 8-3848] Net locked in module/entity system does not have driver. [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:61]
+WARNING: [Synth 8-3848] Net uart_busy in module/entity system does not have driver. [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:117]
+INFO: [Synth 8-6155] done synthesizing module 'system' (45#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:44]
+WARNING: [Synth 8-3331] design alu_prep_daa has unconnected port low[0]
+WARNING: [Synth 8-3331] design execute has unconnected port pla[98]
+WARNING: [Synth 8-3331] design execute has unconnected port pla[94]
+WARNING: [Synth 8-3331] design execute has unconnected port pla[93]
+WARNING: [Synth 8-3331] design execute has unconnected port pla[90]
+WARNING: [Synth 8-3331] design execute has unconnected port pla[87]
+WARNING: [Synth 8-3331] design execute has unconnected port pla[71]
+WARNING: [Synth 8-3331] design execute has unconnected port pla[67]
+WARNING: [Synth 8-3331] design execute has unconnected port pla[63]
+WARNING: [Synth 8-3331] design execute has unconnected port pla[62]
+WARNING: [Synth 8-3331] design execute has unconnected port pla[60]
+WARNING: [Synth 8-3331] design execute has unconnected port pla[54]
+WARNING: [Synth 8-3331] design execute has unconnected port pla[41]
+WARNING: [Synth 8-3331] design execute has unconnected port pla[36]
+WARNING: [Synth 8-3331] design execute has unconnected port pla[32]
+WARNING: [Synth 8-3331] design execute has unconnected port pla[22]
+WARNING: [Synth 8-3331] design execute has unconnected port pla[19]
+WARNING: [Synth 8-3331] design execute has unconnected port pla[18]
+WARNING: [Synth 8-3331] design execute has unconnected port pla[14]
+WARNING: [Synth 8-3331] design execute has unconnected port pla[4]
+WARNING: [Synth 8-3331] design system has unconnected port UART_TXD
+WARNING: [Synth 8-3331] design system has unconnected port led[7]
+WARNING: [Synth 8-3331] design system has unconnected port led[6]
+WARNING: [Synth 8-3331] design system has unconnected port led[5]
+WARNING: [Synth 8-3331] design system has unconnected port led[4]
+WARNING: [Synth 8-3331] design system has unconnected port led[3]
+WARNING: [Synth 8-3331] design system has unconnected port led[2]
+WARNING: [Synth 8-3331] design system has unconnected port led[1]
+WARNING: [Synth 8-3331] design system has unconnected port led[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1504.844 ; gain = 122.625 ; free physical = 2663 ; free virtual = 9533
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1504.844 ; gain = 122.625 ; free physical = 2686 ; free virtual = 9555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1504.844 ; gain = 122.625 ; free physical = 2686 ; free virtual = 9555
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/pisit/Documents/pong-game/final-project/final-project.srcs/constrs_1/imports/VivadoProjects/Basys-3-Master.xdc]
+Finished Parsing XDC File [/home/pisit/Documents/pong-game/final-project/final-project.srcs/constrs_1/imports/VivadoProjects/Basys-3-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/pisit/Documents/pong-game/final-project/final-project.srcs/constrs_1/imports/VivadoProjects/Basys-3-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1814.211 ; gain = 0.000 ; free physical = 2412 ; free virtual = 9286
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1814.211 ; gain = 0.000 ; free physical = 2413 ; free virtual = 9286
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1814.211 ; gain = 0.000 ; free physical = 2412 ; free virtual = 9285
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.07 . Memory (MB): peak = 1814.211 ; gain = 0.000 ; free physical = 2410 ; free virtual = 9285
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1814.211 ; gain = 431.992 ; free physical = 2509 ; free virtual = 9380
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1814.211 ; gain = 431.992 ; free physical = 2509 ; free virtual = 9380
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+WARNING: set_property ALLOW_COMBINATORIAL_LOOPS could not find object (constraint file  /home/pisit/Documents/pong-game/final-project/final-project.srcs/constrs_1/imports/VivadoProjects/Basys-3-Master.xdc, line 300).
+WARNING: set_property ALLOW_COMBINATORIAL_LOOPS could not find object (constraint file  /home/pisit/Documents/pong-game/final-project/final-project.srcs/constrs_1/imports/VivadoProjects/Basys-3-Master.xdc, line 300).
+WARNING: set_property ALLOW_COMBINATORIAL_LOOPS could not find object (constraint file  /home/pisit/Documents/pong-game/final-project/final-project.srcs/constrs_1/imports/VivadoProjects/Basys-3-Master.xdc, line 300).
+WARNING: set_property ALLOW_COMBINATORIAL_LOOPS could not find object (constraint file  /home/pisit/Documents/pong-game/final-project/final-project.srcs/constrs_1/imports/VivadoProjects/Basys-3-Master.xdc, line 300).
+WARNING: set_property ALLOW_COMBINATORIAL_LOOPS could not find object (constraint file  /home/pisit/Documents/pong-game/final-project/final-project.srcs/constrs_1/imports/VivadoProjects/Basys-3-Master.xdc, line 300).
+WARNING: set_property ALLOW_COMBINATORIAL_LOOPS could not find object (constraint file  /home/pisit/Documents/pong-game/final-project/final-project.srcs/constrs_1/imports/VivadoProjects/Basys-3-Master.xdc, line 300).
+WARNING: set_property ALLOW_COMBINATORIAL_LOOPS could not find object (constraint file  /home/pisit/Documents/pong-game/final-project/final-project.srcs/constrs_1/imports/VivadoProjects/Basys-3-Master.xdc, line 300).
+WARNING: set_property ALLOW_COMBINATORIAL_LOOPS could not find object (constraint file  /home/pisit/Documents/pong-game/final-project/final-project.srcs/constrs_1/imports/VivadoProjects/Basys-3-Master.xdc, line 300).
+WARNING: set_property ALLOW_COMBINATORIAL_LOOPS could not find object (constraint file  /home/pisit/Documents/pong-game/final-project/final-project.srcs/constrs_1/imports/VivadoProjects/Basys-3-Master.xdc, line 300).
+WARNING: set_property ALLOW_COMBINATORIAL_LOOPS could not find object (constraint file  /home/pisit/Documents/pong-game/final-project/final-project.srcs/constrs_1/imports/VivadoProjects/Basys-3-Master.xdc, line 300).
+WARNING: set_property ALLOW_COMBINATORIAL_LOOPS could not find object (constraint file  /home/pisit/Documents/pong-game/final-project/final-project.srcs/constrs_1/imports/VivadoProjects/Basys-3-Master.xdc, line 300).
+WARNING: set_property ALLOW_COMBINATORIAL_LOOPS could not find object (constraint file  /home/pisit/Documents/pong-game/final-project/final-project.srcs/constrs_1/imports/VivadoProjects/Basys-3-Master.xdc, line 300).
+WARNING: set_property ALLOW_COMBINATORIAL_LOOPS could not find object (constraint file  /home/pisit/Documents/pong-game/final-project/final-project.srcs/constrs_1/imports/VivadoProjects/Basys-3-Master.xdc, line 300).
+WARNING: set_property ALLOW_COMBINATORIAL_LOOPS could not find object (constraint file  /home/pisit/Documents/pong-game/final-project/final-project.srcs/constrs_1/imports/VivadoProjects/Basys-3-Master.xdc, line 300).
+WARNING: set_property ALLOW_COMBINATORIAL_LOOPS could not find object (constraint file  /home/pisit/Documents/pong-game/final-project/final-project.srcs/constrs_1/imports/VivadoProjects/Basys-3-Master.xdc, line 300).
+WARNING: set_property ALLOW_COMBINATORIAL_LOOPS could not find object (constraint file  /home/pisit/Documents/pong-game/final-project/final-project.srcs/constrs_1/imports/VivadoProjects/Basys-3-Master.xdc, line 300).
+WARNING: set_property ALLOW_COMBINATORIAL_LOOPS could not find object (constraint file  /home/pisit/Documents/pong-game/final-project/final-project.srcs/constrs_1/imports/VivadoProjects/Basys-3-Master.xdc, line 300).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:49 ; elapsed = 00:02:52 . Memory (MB): peak = 1814.211 ; gain = 431.992 ; free physical = 2486 ; free virtual = 9365
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "cpu_clk" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'seven_seg_display'
+INFO: [Synth 8-5544] ROM "an" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "CpuData1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "CpuData2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+                 iSTATE0 |                               01 |                               01
+                 iSTATE1 |                               10 |                               10
+                 iSTATE2 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'seven_seg_display'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:58 ; elapsed = 00:03:01 . Memory (MB): peak = 1814.211 ; gain = 431.992 ; free physical = 2483 ; free virtual = 9364
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 41    
+	   5 Input      1 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 31    
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 75    
++---RAMs : 
+	             128K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 3     
+	   6 Input      8 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 87    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module system 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 3     
+	   6 Input      8 Bit        Muxes := 2     
+Module clock_generator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module clk_delay 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 5     
+Module decode_state 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 6     
+Module execute 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
+Module interrupts 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 8     
+Module ir 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module pla_decode 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 86    
+Module resets 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 6     
+Module memory_ifc 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 20    
+Module sequencer 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 11    
+Module alu_control 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                1 Bit    Registers := 2     
+Module alu_flags 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                1 Bit    Registers := 10    
+Module alu_core 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module alu 
+Detailed RTL Component Info : 
++---XORs : 
+	   5 Input      1 Bit         XORs := 1     
++---Registers : 
+	                4 Bit    Registers := 5     
+Module reg_latch 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module reg_control 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
++---Registers : 
+	                1 Bit    Registers := 4     
+Module inc_dec_2bit 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
+Module inc_dec 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 19    
+Module address_latch 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module address_pins 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module data_pins 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module z80_top_direct_n 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module ram 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---RAMs : 
+	             128K Bit         RAMs := 1     
+Module clock_divider 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
+Module seven_seg_display 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5544] ROM "clock_gen/cpu_clk" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "CpuData2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "z80_/pla_decode_/pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "z80_/pla_decode_/pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "z80_/pla_decode_/pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "z80_/pla_decode_/pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "z80_/pla_decode_/pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "z80_/pla_decode_/pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "z80_/pla_decode_/pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "z80_/pla_decode_/pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "z80_/pla_decode_/pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "z80_/pla_decode_/pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "z80_/pla_decode_/pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "z80_/pla_decode_/pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "z80_/pla_decode_/pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "z80_/pla_decode_/pla0" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5545] ROM "CpuData1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3917] design system has port dp driven by constant 1
+WARNING: [Synth 8-3331] design execute has unconnected port pla[98]
+WARNING: [Synth 8-3331] design execute has unconnected port pla[94]
+WARNING: [Synth 8-3331] design execute has unconnected port pla[93]
+WARNING: [Synth 8-3331] design execute has unconnected port pla[90]
+WARNING: [Synth 8-3331] design execute has unconnected port pla[87]
+WARNING: [Synth 8-3331] design execute has unconnected port pla[71]
+WARNING: [Synth 8-3331] design execute has unconnected port pla[67]
+WARNING: [Synth 8-3331] design execute has unconnected port pla[63]
+WARNING: [Synth 8-3331] design execute has unconnected port pla[62]
+WARNING: [Synth 8-3331] design execute has unconnected port pla[60]
+WARNING: [Synth 8-3331] design execute has unconnected port pla[54]
+WARNING: [Synth 8-3331] design execute has unconnected port pla[41]
+WARNING: [Synth 8-3331] design execute has unconnected port pla[36]
+WARNING: [Synth 8-3331] design execute has unconnected port pla[32]
+WARNING: [Synth 8-3331] design execute has unconnected port pla[22]
+WARNING: [Synth 8-3331] design execute has unconnected port pla[19]
+WARNING: [Synth 8-3331] design execute has unconnected port pla[18]
+WARNING: [Synth 8-3331] design execute has unconnected port pla[14]
+WARNING: [Synth 8-3331] design execute has unconnected port pla[4]
+WARNING: [Synth 8-3331] design system has unconnected port UART_TXD
+WARNING: [Synth 8-3331] design system has unconnected port led[7]
+WARNING: [Synth 8-3331] design system has unconnected port led[6]
+WARNING: [Synth 8-3331] design system has unconnected port led[5]
+WARNING: [Synth 8-3331] design system has unconnected port led[4]
+WARNING: [Synth 8-3331] design system has unconnected port led[3]
+WARNING: [Synth 8-3331] design system has unconnected port led[2]
+WARNING: [Synth 8-3331] design system has unconnected port led[1]
+WARNING: [Synth 8-3331] design system has unconnected port led[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:11 ; elapsed = 00:04:15 . Memory (MB): peak = 1946.211 ; gain = 563.992 ; free physical = 2448 ; free virtual = 9336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++------------+---------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object    | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+---------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|ram:        | reg_array_reg | 16 K x 8(READ_FIRST)   | W | R |                        |   |   | Port A           | 0      | 4      | 
++------------+---------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance i_460/ram_/reg_array_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_460/ram_/reg_array_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_460/ram_/reg_array_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_460/ram_/reg_array_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:05:02 ; elapsed = 00:05:07 . Memory (MB): peak = 1946.211 ; gain = 563.992 ; free physical = 2333 ; free virtual = 9221
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+Inferred a: "set_disable_timing -from a -to z i_415(tricell)"
+Inferred a: "set_disable_timing -from a -to z sw2_i_399(tricell)"
+Inferred a: "set_disable_timing -from a -to z i_409(tricell)"
+Inferred a: "set_disable_timing -from a -to z sw2_i_396(tricell)"
+Inferred a: "set_disable_timing -from a -to z i_410(tricell)"
+Inferred a: "set_disable_timing -from a -to z sw2_i_397(tricell)"
+Inferred a: "set_disable_timing -from a -to z i_408(tricell)"
+Inferred a: "set_disable_timing -from a -to z sw2_i_395(tricell)"
+Inferred a: "set_disable_timing -from a -to z i_413(tricell)"
+Inferred a: "set_disable_timing -from a -to z sw2_i_394(tricell)"
+Inferred a: "set_disable_timing -from a -to z i_412(tricell)"
+Inferred a: "set_disable_timing -from a -to z sw2_i_393(tricell)"
+Inferred a: "set_disable_timing -from a -to z i_411(tricell)"
+Inferred a: "set_disable_timing -from a -to z sw2_i_392(tricell)"
+Inferred a: "set_disable_timing -from a -to z i_414(tricell)"
+Inferred a: "set_disable_timing -from a -to z sw2_i_398(tricell)"
+Inferred a: "set_disable_timing -from a -to z i_15(tricell)"
+Inferred a: "set_disable_timing -from a -to z i_14(tricell)"
+Inferred a: "set_disable_timing -from a -to z i_13(tricell)"
+Inferred a: "set_disable_timing -from a -to z i_12(tricell)"
+Inferred a: "set_disable_timing -from a -to z i_11(tricell)"
+Inferred a: "set_disable_timing -from a -to z i_10(tricell)"
+Inferred a: "set_disable_timing -from a -to z i_9(tricell)"
+Inferred a: "set_disable_timing -from a -to z i_8(tricell)"
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:05:02 ; elapsed = 00:05:07 . Memory (MB): peak = 1946.211 ; gain = 563.992 ; free physical = 2331 ; free virtual = 9220
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++------------+---------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object    | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+---------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|ram:        | reg_array_reg | 16 K x 8(READ_FIRST)   | W | R |                        |   |   | Port A           | 0      | 4      | 
++------------+---------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance ram_/reg_array_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance ram_/reg_array_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance ram_/reg_array_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance ram_/reg_array_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:05:04 ; elapsed = 00:05:08 . Memory (MB): peak = 1946.211 ; gain = 563.992 ; free physical = 2330 ; free virtual = 9219
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:05:04 ; elapsed = 00:05:09 . Memory (MB): peak = 1946.211 ; gain = 563.992 ; free physical = 2330 ; free virtual = 9219
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:05:04 ; elapsed = 00:05:09 . Memory (MB): peak = 1946.211 ; gain = 563.992 ; free physical = 2330 ; free virtual = 9219
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Found timing loop:
+     0: \latch[7]_i_2__2 /O (LUT2)
+     1: \latch[7]_i_2__2 /I0 (LUT2)
+     2: \latch[7]_i_4 /O (LUT5)
+     3: \latch[7]_i_4 /I4 (LUT5)
+     4: \latch[7]_i_11 /O (LUT4)
+     5: \latch[7]_i_11 /I2 (LUT4)
+     6: DFFE_inst_latch_sf_i_3/O (LUT2)
+     7: DFFE_inst_latch_sf_i_3/I0 (LUT2)
+     8: DFFE_inst_latch_sf_i_12/O (LUT2)
+     9: DFFE_inst_latch_sf_i_12/I0 (LUT2)
+    10: DFFE_inst_latch_sf_i_25/O (LUT6)
+    11: DFFE_inst_latch_sf_i_25/I4 (LUT6)
+    12: \latch[7]_i_2__2 /O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:44]
+Inferred a: "set_disable_timing -from I0 -to O \latch[7]_i_2__2 "
+Found timing loop:
+     0: \latch[7]_i_109 /O (LUT2)
+     1: \latch[7]_i_109 /I0 (LUT2)
+     2: \latch[7]_i_185 /O (LUT6)
+     3: \latch[7]_i_185 /I2 (LUT6)
+     4: \latch[7]_i_2__1 /O (LUT2)
+     5: \latch[7]_i_2__1 /I0 (LUT2)
+     6: \latch[7]_i_7 /O (LUT5)
+     7: \latch[7]_i_7 /I4 (LUT5)
+     8: \latch[7]_i_33 /O (LUT4)
+     9: \latch[7]_i_33 /I2 (LUT4)
+    10: \latch[7]_i_109 /O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:44]
+Inferred a: "set_disable_timing -from I0 -to O \latch[7]_i_109 "
+Found timing loop:
+     0: \latch[7]_i_2__1 /O (LUT2)
+     1: \latch[7]_i_2__1 /I0 (LUT2)
+     2: \latch[7]_i_7 /O (LUT5)
+     3: \latch[7]_i_7 /I4 (LUT5)
+     4: \latch[7]_i_33 /O (LUT4)
+     5: \latch[7]_i_33 /I2 (LUT4)
+     6: \latch[7]_i_109 /O (LUT2)
+     7: \latch[7]_i_109 /O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:44]
+Inferred a: "set_disable_timing -from I0 -to O \latch[7]_i_2__1 "
+Found timing loop:
+     0: DFFE_inst_latch_sf_i_3/O (LUT2)
+     1: DFFE_inst_latch_sf_i_3/I0 (LUT2)
+     2: DFFE_inst_latch_sf_i_12/O (LUT2)
+     3: DFFE_inst_latch_sf_i_12/I0 (LUT2)
+     4: DFFE_inst_latch_sf_i_25/O (LUT6)
+     5: DFFE_inst_latch_sf_i_25/I4 (LUT6)
+     6: \latch[7]_i_2__2 /O (LUT2)
+     7: \latch[7]_i_2__2 /O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:44]
+Inferred a: "set_disable_timing -from I0 -to O DFFE_inst_latch_sf_i_3"
+Found timing loop:
+     0: \latch[7]_i_2__4 /O (LUT2)
+     1: \latch[7]_i_2__4 /I0 (LUT2)
+     2: \latch[7]_i_4__1 /O (LUT2)
+     3: \latch[7]_i_4__1 /I0 (LUT2)
+     4: \latch[7]_i_10__1 /O (LUT6)
+     5: \latch[7]_i_10__1 /I4 (LUT6)
+     6: \latch[7]_i_2__2 /O (LUT2)
+     7: \latch[7]_i_2__2 /O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:44]
+Inferred a: "set_disable_timing -from I0 -to O \latch[7]_i_2__4 "
+Found timing loop:
+     0: \latch[1]_i_1__0 /O (LUT2)
+     1: \latch[1]_i_1__0 /I0 (LUT2)
+     2: \latch[1]_i_2__0 /O (LUT5)
+     3: \latch[1]_i_2__0 /I4 (LUT5)
+     4: \latch[1]_i_8__0 /O (LUT4)
+     5: \latch[1]_i_8__0 /I2 (LUT4)
+     6: \opcode[1]_i_4 /O (LUT2)
+     7: \opcode[1]_i_4 /I0 (LUT2)
+     8: \opcode[1]_i_5 /O (LUT2)
+     9: \opcode[1]_i_5 /I0 (LUT2)
+    10: \opcode[1]_i_7 /O (LUT6)
+    11: \opcode[1]_i_7 /I4 (LUT6)
+    12: \latch[1]_i_1__0 /O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:44]
+Inferred a: "set_disable_timing -from I0 -to O \latch[1]_i_1__0 "
+Found timing loop:
+     0: \latch[1]_i_12 /O (LUT2)
+     1: \latch[1]_i_12 /I0 (LUT2)
+     2: \latch[1]_i_13 /O (LUT6)
+     3: \latch[1]_i_13 /I2 (LUT6)
+     4: \latch[1]_i_1 /O (LUT2)
+     5: \latch[1]_i_1 /I0 (LUT2)
+     6: \latch[1]_i_2 /O (LUT5)
+     7: \latch[1]_i_2 /I4 (LUT5)
+     8: \latch[1]_i_8 /O (LUT4)
+     9: \latch[1]_i_8 /I2 (LUT4)
+    10: \latch[1]_i_12 /O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:44]
+Inferred a: "set_disable_timing -from I0 -to O \latch[1]_i_12 "
+Found timing loop:
+     0: \latch[1]_i_1 /O (LUT2)
+     1: \latch[1]_i_1 /I0 (LUT2)
+     2: \latch[1]_i_2 /O (LUT5)
+     3: \latch[1]_i_2 /I4 (LUT5)
+     4: \latch[1]_i_8 /O (LUT4)
+     5: \latch[1]_i_8 /I2 (LUT4)
+     6: \latch[1]_i_12 /O (LUT2)
+     7: \latch[1]_i_12 /O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:44]
+Inferred a: "set_disable_timing -from I0 -to O \latch[1]_i_1 "
+Found timing loop:
+     0: \opcode[1]_i_4 /O (LUT2)
+     1: \opcode[1]_i_4 /I0 (LUT2)
+     2: \opcode[1]_i_5 /O (LUT2)
+     3: \opcode[1]_i_5 /I0 (LUT2)
+     4: \opcode[1]_i_7 /O (LUT6)
+     5: \opcode[1]_i_7 /I4 (LUT6)
+     6: \latch[1]_i_1__0 /O (LUT2)
+     7: \latch[1]_i_1__0 /O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:44]
+Inferred a: "set_disable_timing -from I0 -to O \opcode[1]_i_4 "
+Found timing loop:
+     0: \latch[1]_i_1__2 /O (LUT2)
+     1: \latch[1]_i_1__2 /I0 (LUT2)
+     2: \latch[1]_i_2__2 /O (LUT2)
+     3: \latch[1]_i_2__2 /I0 (LUT2)
+     4: \latch[1]_i_4__2 /O (LUT6)
+     5: \latch[1]_i_4__2 /I4 (LUT6)
+     6: \latch[1]_i_1__0 /O (LUT2)
+     7: \latch[1]_i_1__0 /O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:44]
+Inferred a: "set_disable_timing -from I0 -to O \latch[1]_i_1__2 "
+Found timing loop:
+     0: \latch[0]_i_1__0 /O (LUT2)
+     1: \latch[0]_i_1__0 /I0 (LUT2)
+     2: \latch[0]_i_2__0 /O (LUT5)
+     3: \latch[0]_i_2__0 /I4 (LUT5)
+     4: \latch[0]_i_8__0 /O (LUT4)
+     5: \latch[0]_i_8__0 /I2 (LUT4)
+     6: DFFE_inst_latch_cf_i_3/O (LUT2)
+     7: DFFE_inst_latch_cf_i_3/I0 (LUT2)
+     8: DFFE_inst_latch_cf_i_5/O (LUT2)
+     9: DFFE_inst_latch_cf_i_5/I0 (LUT2)
+    10: DFFE_inst_latch_cf_i_9/O (LUT6)
+    11: DFFE_inst_latch_cf_i_9/I4 (LUT6)
+    12: \latch[0]_i_1__0 /O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:44]
+Inferred a: "set_disable_timing -from I0 -to O \latch[0]_i_1__0 "
+Found timing loop:
+     0: \latch[0]_i_12 /O (LUT2)
+     1: \latch[0]_i_12 /I0 (LUT2)
+     2: \latch[0]_i_13 /O (LUT6)
+     3: \latch[0]_i_13 /I2 (LUT6)
+     4: \latch[0]_i_1 /O (LUT2)
+     5: \latch[0]_i_1 /I0 (LUT2)
+     6: \latch[0]_i_2 /O (LUT5)
+     7: \latch[0]_i_2 /I4 (LUT5)
+     8: \latch[0]_i_8 /O (LUT4)
+     9: \latch[0]_i_8 /I2 (LUT4)
+    10: \latch[0]_i_12 /O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:44]
+Inferred a: "set_disable_timing -from I0 -to O \latch[0]_i_12 "
+Found timing loop:
+     0: \latch[0]_i_1 /O (LUT2)
+     1: \latch[0]_i_1 /I0 (LUT2)
+     2: \latch[0]_i_2 /O (LUT5)
+     3: \latch[0]_i_2 /I4 (LUT5)
+     4: \latch[0]_i_8 /O (LUT4)
+     5: \latch[0]_i_8 /I2 (LUT4)
+     6: \latch[0]_i_12 /O (LUT2)
+     7: \latch[0]_i_12 /O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:44]
+Inferred a: "set_disable_timing -from I0 -to O \latch[0]_i_1 "
+Found timing loop:
+     0: DFFE_inst_latch_cf_i_3/O (LUT2)
+     1: DFFE_inst_latch_cf_i_3/I0 (LUT2)
+     2: DFFE_inst_latch_cf_i_5/O (LUT2)
+     3: DFFE_inst_latch_cf_i_5/I0 (LUT2)
+     4: DFFE_inst_latch_cf_i_9/O (LUT6)
+     5: DFFE_inst_latch_cf_i_9/I4 (LUT6)
+     6: \latch[0]_i_1__0 /O (LUT2)
+     7: \latch[0]_i_1__0 /O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:44]
+Inferred a: "set_disable_timing -from I0 -to O DFFE_inst_latch_cf_i_3"
+Found timing loop:
+     0: \latch[0]_i_1__2 /O (LUT2)
+     1: \latch[0]_i_1__2 /I0 (LUT2)
+     2: \latch[0]_i_2__2 /O (LUT2)
+     3: \latch[0]_i_2__2 /I0 (LUT2)
+     4: \latch[0]_i_4__2 /O (LUT6)
+     5: \latch[0]_i_4__2 /I4 (LUT6)
+     6: \latch[0]_i_1__0 /O (LUT2)
+     7: \latch[0]_i_1__0 /O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:44]
+Inferred a: "set_disable_timing -from I0 -to O \latch[0]_i_1__2 "
+Found timing loop:
+     0: \opcode[4]_i_4 /O (LUT2)
+     1: \opcode[4]_i_4 /I0 (LUT2)
+     2: \opcode[4]_i_5 /O (LUT2)
+     3: \opcode[4]_i_5 /I0 (LUT2)
+     4: \opcode[4]_i_7 /O (LUT6)
+     5: \opcode[4]_i_7 /I4 (LUT6)
+     6: \latch[4]_i_1__0 /O (LUT2)
+     7: \latch[4]_i_1__0 /I0 (LUT2)
+     8: \latch[4]_i_2__0 /O (LUT5)
+     9: \latch[4]_i_2__0 /I4 (LUT5)
+    10: \latch[4]_i_8__0 /O (LUT4)
+    11: \latch[4]_i_8__0 /I2 (LUT4)
+    12: \opcode[4]_i_4 /O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:44]
+Inferred a: "set_disable_timing -from I0 -to O \opcode[4]_i_4 "
+Found timing loop:
+     0: \latch[4]_i_1__0 /O (LUT2)
+     1: \latch[4]_i_1__0 /I0 (LUT2)
+     2: \latch[4]_i_2__0 /O (LUT5)
+     3: \latch[4]_i_2__0 /I4 (LUT5)
+     4: \latch[4]_i_8__0 /O (LUT4)
+     5: \latch[4]_i_8__0 /I2 (LUT4)
+     6: \opcode[4]_i_4 /O (LUT2)
+     7: \opcode[4]_i_4 /O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:44]
+Inferred a: "set_disable_timing -from I0 -to O \latch[4]_i_1__0 "
+Found timing loop:
+     0: \latch[4]_i_12 /O (LUT2)
+     1: \latch[4]_i_12 /I0 (LUT2)
+     2: \latch[4]_i_13 /O (LUT6)
+     3: \latch[4]_i_13 /I2 (LUT6)
+     4: \latch[4]_i_1 /O (LUT2)
+     5: \latch[4]_i_1 /I0 (LUT2)
+     6: \latch[4]_i_2 /O (LUT5)
+     7: \latch[4]_i_2 /I4 (LUT5)
+     8: \latch[4]_i_8 /O (LUT4)
+     9: \latch[4]_i_8 /I2 (LUT4)
+    10: \latch[4]_i_12 /O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:44]
+Inferred a: "set_disable_timing -from I0 -to O \latch[4]_i_12 "
+Found timing loop:
+     0: \latch[4]_i_1 /O (LUT2)
+     1: \latch[4]_i_1 /I0 (LUT2)
+     2: \latch[4]_i_2 /O (LUT5)
+     3: \latch[4]_i_2 /I4 (LUT5)
+     4: \latch[4]_i_8 /O (LUT4)
+     5: \latch[4]_i_8 /I2 (LUT4)
+     6: \latch[4]_i_12 /O (LUT2)
+     7: \latch[4]_i_12 /O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:44]
+Inferred a: "set_disable_timing -from I0 -to O \latch[4]_i_1 "
+Found timing loop:
+     0: \opcode[4]_i_4 /O (LUT2)
+     1: \opcode[4]_i_4 /O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:44]
+Found timing loop:
+     0: \opcode[4]_i_2 /O (LUT6)
+     1: \opcode[4]_i_2 /I2 (LUT6)
+     2: \opcode[4]_i_4 /O (LUT2)
+     3: \opcode[4]_i_4 /O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:44]
+Inferred a: "set_disable_timing -from I2 -to O \opcode[4]_i_2 "
+Found timing loop:
+     0: flags_yf_i_2/O (LUT2)
+     1: flags_yf_i_2/I0 (LUT2)
+     2: flags_yf_i_3/O (LUT2)
+     3: flags_yf_i_3/I0 (LUT2)
+     4: flags_yf_i_5/O (LUT6)
+     5: flags_yf_i_5/I4 (LUT6)
+     6: \latch[5]_i_1__0 /O (LUT2)
+     7: \latch[5]_i_1__0 /I0 (LUT2)
+     8: \latch[5]_i_2__0 /O (LUT5)
+     9: \latch[5]_i_2__0 /I4 (LUT5)
+    10: \latch[5]_i_8__0 /O (LUT4)
+    11: \latch[5]_i_8__0 /I2 (LUT4)
+    12: flags_yf_i_2/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:44]
+Inferred a: "set_disable_timing -from I0 -to O flags_yf_i_2"
+Found timing loop:
+     0: \latch[5]_i_1__0 /O (LUT2)
+     1: \latch[5]_i_1__0 /I0 (LUT2)
+     2: \latch[5]_i_2__0 /O (LUT5)
+     3: \latch[5]_i_2__0 /I4 (LUT5)
+     4: \latch[5]_i_8__0 /O (LUT4)
+     5: \latch[5]_i_8__0 /I2 (LUT4)
+     6: flags_yf_i_2/O (LUT2)
+     7: flags_yf_i_2/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:44]
+Inferred a: "set_disable_timing -from I0 -to O \latch[5]_i_1__0 "
+Found timing loop:
+     0: \latch[5]_i_12 /O (LUT2)
+     1: \latch[5]_i_12 /I0 (LUT2)
+     2: \latch[5]_i_13 /O (LUT6)
+     3: \latch[5]_i_13 /I2 (LUT6)
+     4: \latch[5]_i_1 /O (LUT2)
+     5: \latch[5]_i_1 /I0 (LUT2)
+     6: \latch[5]_i_2 /O (LUT5)
+     7: \latch[5]_i_2 /I4 (LUT5)
+     8: \latch[5]_i_8 /O (LUT4)
+     9: \latch[5]_i_8 /I2 (LUT4)
+    10: \latch[5]_i_12 /O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:44]
+Inferred a: "set_disable_timing -from I0 -to O \latch[5]_i_12 "
+Found timing loop:
+     0: \latch[5]_i_1 /O (LUT2)
+     1: \latch[5]_i_1 /I0 (LUT2)
+     2: \latch[5]_i_2 /O (LUT5)
+     3: \latch[5]_i_2 /I4 (LUT5)
+     4: \latch[5]_i_8 /O (LUT4)
+     5: \latch[5]_i_8 /I2 (LUT4)
+     6: \latch[5]_i_12 /O (LUT2)
+     7: \latch[5]_i_12 /O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:44]
+Inferred a: "set_disable_timing -from I0 -to O \latch[5]_i_1 "
+Found timing loop:
+     0: flags_yf_i_2/O (LUT2)
+     1: flags_yf_i_2/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:44]
+Found timing loop:
+     0: \opcode[5]_i_2 /O (LUT6)
+     1: \opcode[5]_i_2 /I2 (LUT6)
+     2: flags_yf_i_2/O (LUT2)
+     3: flags_yf_i_2/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:44]
+Inferred a: "set_disable_timing -from I2 -to O \opcode[5]_i_2 "
+Found timing loop:
+     0: flags_xf_i_2/O (LUT2)
+     1: flags_xf_i_2/I0 (LUT2)
+     2: flags_xf_i_4/O (LUT2)
+     3: flags_xf_i_4/I0 (LUT2)
+     4: flags_xf_i_7/O (LUT6)
+     5: flags_xf_i_7/I4 (LUT6)
+     6: \latch[3]_i_1__0 /O (LUT2)
+     7: \latch[3]_i_1__0 /I0 (LUT2)
+     8: \latch[3]_i_2__0 /O (LUT5)
+     9: \latch[3]_i_2__0 /I4 (LUT5)
+    10: \latch[3]_i_8__0 /O (LUT4)
+    11: \latch[3]_i_8__0 /I2 (LUT4)
+    12: flags_xf_i_2/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:44]
+Inferred a: "set_disable_timing -from I0 -to O flags_xf_i_2"
+Found timing loop:
+     0: \latch[3]_i_1__0 /O (LUT2)
+     1: \latch[3]_i_1__0 /I0 (LUT2)
+     2: \latch[3]_i_2__0 /O (LUT5)
+     3: \latch[3]_i_2__0 /I4 (LUT5)
+     4: \latch[3]_i_8__0 /O (LUT4)
+     5: \latch[3]_i_8__0 /I2 (LUT4)
+     6: flags_xf_i_2/O (LUT2)
+     7: flags_xf_i_2/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:44]
+Inferred a: "set_disable_timing -from I0 -to O \latch[3]_i_1__0 "
+Found timing loop:
+     0: \latch[3]_i_12 /O (LUT2)
+     1: \latch[3]_i_12 /I0 (LUT2)
+     2: \latch[3]_i_13 /O (LUT6)
+     3: \latch[3]_i_13 /I2 (LUT6)
+     4: \latch[3]_i_1 /O (LUT2)
+     5: \latch[3]_i_1 /I0 (LUT2)
+     6: \latch[3]_i_2 /O (LUT5)
+     7: \latch[3]_i_2 /I4 (LUT5)
+     8: \latch[3]_i_8 /O (LUT4)
+     9: \latch[3]_i_8 /I2 (LUT4)
+    10: \latch[3]_i_12 /O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:44]
+Inferred a: "set_disable_timing -from I0 -to O \latch[3]_i_12 "
+Found timing loop:
+     0: \latch[3]_i_1 /O (LUT2)
+     1: \latch[3]_i_1 /I0 (LUT2)
+     2: \latch[3]_i_2 /O (LUT5)
+     3: \latch[3]_i_2 /I4 (LUT5)
+     4: \latch[3]_i_8 /O (LUT4)
+     5: \latch[3]_i_8 /I2 (LUT4)
+     6: \latch[3]_i_12 /O (LUT2)
+     7: \latch[3]_i_12 /O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:44]
+Inferred a: "set_disable_timing -from I0 -to O \latch[3]_i_1 "
+Found timing loop:
+     0: flags_xf_i_2/O (LUT2)
+     1: flags_xf_i_2/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:44]
+Found timing loop:
+     0: \opcode[3]_i_2 /O (LUT6)
+     1: \opcode[3]_i_2 /I2 (LUT6)
+     2: flags_xf_i_2/O (LUT2)
+     3: flags_xf_i_2/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:44]
+Inferred a: "set_disable_timing -from I2 -to O \opcode[3]_i_2 "
+Found timing loop:
+     0: \latch[2]_i_13 /O (LUT6)
+     1: \latch[2]_i_13 /I2 (LUT6)
+     2: \latch[2]_i_1 /O (LUT2)
+     3: \latch[2]_i_1 /I0 (LUT2)
+     4: \latch[2]_i_2 /O (LUT5)
+     5: \latch[2]_i_2 /I4 (LUT5)
+     6: \latch[2]_i_8 /O (LUT4)
+     7: \latch[2]_i_8 /I2 (LUT4)
+     8: \latch[2]_i_12 /O (LUT2)
+     9: \latch[2]_i_12 /I0 (LUT2)
+    10: \latch[2]_i_13 /O (LUT6)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:44]
+Inferred a: "set_disable_timing -from I2 -to O \latch[2]_i_13 "
+Found timing loop:
+     0: \latch[2]_i_1 /O (LUT2)
+     1: \latch[2]_i_1 /I0 (LUT2)
+     2: \latch[2]_i_2 /O (LUT5)
+     3: \latch[2]_i_2 /I4 (LUT5)
+     4: \latch[2]_i_8 /O (LUT4)
+     5: \latch[2]_i_8 /I0 (LUT4)
+     6: \latch[2]_i_1__1 /O (LUT2)
+     7: \latch[2]_i_1__1 /I0 (LUT2)
+     8: \latch[2]_i_2__1 /O (LUT2)
+     9: \latch[2]_i_2__1 /I0 (LUT2)
+    10: \latch[2]_i_4__1 /O (LUT6)
+    11: \latch[2]_i_4__1 /I4 (LUT6)
+    12: \latch[2]_i_1 /O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:44]
+Inferred a: "set_disable_timing -from I0 -to O \latch[2]_i_1 "
+Found timing loop:
+     0: \opcode[2]_i_4 /O (LUT2)
+     1: \opcode[2]_i_4 /I0 (LUT2)
+     2: \opcode[2]_i_5 /O (LUT2)
+     3: \opcode[2]_i_5 /I0 (LUT2)
+     4: \opcode[2]_i_7 /O (LUT6)
+     5: \opcode[2]_i_7 /I4 (LUT6)
+     6: \latch[2]_i_1__0 /O (LUT2)
+     7: \latch[2]_i_1__0 /I0 (LUT2)
+     8: \latch[2]_i_2__0 /O (LUT5)
+     9: \latch[2]_i_2__0 /I4 (LUT5)
+    10: \latch[2]_i_8__0 /O (LUT4)
+    11: \latch[2]_i_8__0 /I2 (LUT4)
+    12: \opcode[2]_i_4 /O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:44]
+Inferred a: "set_disable_timing -from I0 -to O \opcode[2]_i_4 "
+Found timing loop:
+     0: \latch[2]_i_1__0 /O (LUT2)
+     1: \latch[2]_i_1__0 /I0 (LUT2)
+     2: \latch[2]_i_2__0 /O (LUT5)
+     3: \latch[2]_i_2__0 /I4 (LUT5)
+     4: \latch[2]_i_8__0 /O (LUT4)
+     5: \latch[2]_i_8__0 /I2 (LUT4)
+     6: \opcode[2]_i_4 /O (LUT2)
+     7: \opcode[2]_i_4 /O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:44]
+Inferred a: "set_disable_timing -from I0 -to O \latch[2]_i_1__0 "
+Found timing loop:
+     0: \latch[6]_i_13 /O (LUT6)
+     1: \latch[6]_i_13 /I2 (LUT6)
+     2: \latch[6]_i_1 /O (LUT2)
+     3: \latch[6]_i_1 /I0 (LUT2)
+     4: \latch[6]_i_2 /O (LUT5)
+     5: \latch[6]_i_2 /I4 (LUT5)
+     6: \latch[6]_i_8 /O (LUT4)
+     7: \latch[6]_i_8 /I2 (LUT4)
+     8: \latch[6]_i_12 /O (LUT2)
+     9: \latch[6]_i_12 /I0 (LUT2)
+    10: \latch[6]_i_13 /O (LUT6)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:44]
+Inferred a: "set_disable_timing -from I2 -to O \latch[6]_i_13 "
+Found timing loop:
+     0: \latch[6]_i_1 /O (LUT2)
+     1: \latch[6]_i_1 /I0 (LUT2)
+     2: \latch[6]_i_2 /O (LUT5)
+     3: \latch[6]_i_2 /I4 (LUT5)
+     4: \latch[6]_i_8 /O (LUT4)
+     5: \latch[6]_i_8 /I0 (LUT4)
+     6: \latch[6]_i_1__1 /O (LUT2)
+     7: \latch[6]_i_1__1 /I0 (LUT2)
+     8: \latch[6]_i_2__1 /O (LUT2)
+     9: \latch[6]_i_2__1 /I0 (LUT2)
+    10: \latch[6]_i_4__1 /O (LUT6)
+    11: \latch[6]_i_4__1 /I4 (LUT6)
+    12: \latch[6]_i_1 /O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:44]
+Inferred a: "set_disable_timing -from I0 -to O \latch[6]_i_1 "
+Found timing loop:
+     0: \opcode[6]_i_4 /O (LUT2)
+     1: \opcode[6]_i_4 /I0 (LUT2)
+     2: \opcode[6]_i_5 /O (LUT2)
+     3: \opcode[6]_i_5 /I0 (LUT2)
+     4: \opcode[6]_i_7 /O (LUT6)
+     5: \opcode[6]_i_7 /I4 (LUT6)
+     6: \latch[6]_i_1__0 /O (LUT2)
+     7: \latch[6]_i_1__0 /I0 (LUT2)
+     8: \latch[6]_i_2__0 /O (LUT5)
+     9: \latch[6]_i_2__0 /I4 (LUT5)
+    10: \latch[6]_i_8__0 /O (LUT4)
+    11: \latch[6]_i_8__0 /I2 (LUT4)
+    12: \opcode[6]_i_4 /O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:44]
+Inferred a: "set_disable_timing -from I0 -to O \opcode[6]_i_4 "
+Found timing loop:
+     0: \latch[6]_i_1__0 /O (LUT2)
+     1: \latch[6]_i_1__0 /I0 (LUT2)
+     2: \latch[6]_i_2__0 /O (LUT5)
+     3: \latch[6]_i_2__0 /I4 (LUT5)
+     4: \latch[6]_i_8__0 /O (LUT4)
+     5: \latch[6]_i_8__0 /I2 (LUT4)
+     6: \opcode[6]_i_4 /O (LUT2)
+     7: \opcode[6]_i_4 /O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:44]
+Inferred a: "set_disable_timing -from I0 -to O \latch[6]_i_1__0 "
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:05:05 ; elapsed = 00:05:10 . Memory (MB): peak = 1946.211 ; gain = 563.992 ; free physical = 2331 ; free virtual = 9219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:05:05 ; elapsed = 00:05:10 . Memory (MB): peak = 1946.211 ; gain = 563.992 ; free physical = 2331 ; free virtual = 9219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:05:05 ; elapsed = 00:05:10 . Memory (MB): peak = 1946.211 ; gain = 563.992 ; free physical = 2331 ; free virtual = 9219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:05:05 ; elapsed = 00:05:10 . Memory (MB): peak = 1946.211 ; gain = 563.992 ; free physical = 2331 ; free virtual = 9219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     3|
+|2     |CARRY4     |    14|
+|3     |LUT1       |     5|
+|4     |LUT2       |   270|
+|5     |LUT3       |   236|
+|6     |LUT4       |   248|
+|7     |LUT5       |   285|
+|8     |LUT6       |  1083|
+|9     |RAMB36E1   |     1|
+|10    |RAMB36E1_1 |     1|
+|11    |RAMB36E1_2 |     1|
+|12    |RAMB36E1_3 |     1|
+|13    |FDCE       |    72|
+|14    |FDPE       |     4|
+|15    |FDRE       |   316|
+|16    |IBUF       |     3|
+|17    |OBUF       |    12|
+|18    |OBUFT      |     9|
++------+-----------+------+
+
+Report Instance Areas: 
++------+-----------------------+------------------+------+
+|      |Instance               |Module            |Cells |
++------+-----------------------+------------------+------+
+|1     |top                    |                  |  2564|
+|2     |  clock_gen            |clock_generator   |     8|
+|3     |  ram_                 |ram               |     4|
+|4     |  ssd                  |seven_seg_display |    62|
+|5     |    hts                |hex_to_seven_seg  |     4|
+|6     |    cd                 |clock_divider     |    50|
+|7     |  z80_                 |z80_top_direct_n  |  2462|
+|8     |    address_latch_     |address_latch     |    48|
+|9     |    address_pins_      |address_pins      |    28|
+|10    |    alu_               |alu               |    34|
+|11    |    alu_control_       |alu_control       |     2|
+|12    |    alu_flags_         |alu_flags         |    19|
+|13    |    clk_delay_         |clk_delay         |     3|
+|14    |    data_pins_         |data_pins         |     8|
+|15    |    decode_state_      |decode_state      |    16|
+|16    |    execute_           |execute           |  1222|
+|17    |    interrupts_        |interrupts        |    21|
+|18    |    ir_                |ir                |   273|
+|19    |    memory_ifc_        |memory_ifc        |    65|
+|20    |    reg_control_       |reg_control       |     7|
+|21    |    reg_file_          |reg_file          |   336|
+|22    |      b2v_latch_af2_hi |reg_latch         |     8|
+|23    |      b2v_latch_af2_lo |reg_latch_0       |     8|
+|24    |      b2v_latch_af_hi  |reg_latch_1       |     8|
+|25    |      b2v_latch_af_lo  |reg_latch_2       |     8|
+|26    |      b2v_latch_bc2_hi |reg_latch_3       |    16|
+|27    |      b2v_latch_bc2_lo |reg_latch_4       |    16|
+|28    |      b2v_latch_bc_hi  |reg_latch_5       |     8|
+|29    |      b2v_latch_bc_lo  |reg_latch_6       |     8|
+|30    |      b2v_latch_de2_hi |reg_latch_7       |     8|
+|31    |      b2v_latch_de2_lo |reg_latch_8       |     8|
+|32    |      b2v_latch_de_hi  |reg_latch_9       |    16|
+|33    |      b2v_latch_de_lo  |reg_latch_10      |    16|
+|34    |      b2v_latch_hl2_hi |reg_latch_11      |     8|
+|35    |      b2v_latch_hl2_lo |reg_latch_12      |     8|
+|36    |      b2v_latch_hl_hi  |reg_latch_13      |     8|
+|37    |      b2v_latch_hl_lo  |reg_latch_14      |     8|
+|38    |      b2v_latch_ir_hi  |reg_latch_15      |    16|
+|39    |      b2v_latch_ir_lo  |reg_latch_16      |    16|
+|40    |      b2v_latch_ix_hi  |reg_latch_17      |    16|
+|41    |      b2v_latch_ix_lo  |reg_latch_18      |    16|
+|42    |      b2v_latch_iy_hi  |reg_latch_19      |     8|
+|43    |      b2v_latch_iy_lo  |reg_latch_20      |     8|
+|44    |      b2v_latch_pc_hi  |reg_latch_21      |     8|
+|45    |      b2v_latch_pc_lo  |reg_latch_22      |     8|
+|46    |      b2v_latch_sp_hi  |reg_latch_23      |     8|
+|47    |      b2v_latch_sp_lo  |reg_latch_24      |     8|
+|48    |      b2v_latch_wz_hi  |reg_latch_25      |    32|
+|49    |      b2v_latch_wz_lo  |reg_latch_26      |    32|
+|50    |    resets_            |resets            |    24|
+|51    |    sequencer_         |sequencer         |   355|
++------+-----------------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:05:05 ; elapsed = 00:05:10 . Memory (MB): peak = 1946.211 ; gain = 563.992 ; free physical = 2331 ; free virtual = 9219
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 41 critical warnings and 29 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:05:00 ; elapsed = 00:05:04 . Memory (MB): peak = 1946.211 ; gain = 254.625 ; free physical = 2382 ; free virtual = 9270
+Synthesis Optimization Complete : Time (s): cpu = 00:05:05 ; elapsed = 00:05:10 . Memory (MB): peak = 1946.219 ; gain = 563.992 ; free physical = 2391 ; free virtual = 9280
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1946.219 ; gain = 0.000 ; free physical = 2329 ; free virtual = 9217
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+222 Infos, 66 Warnings, 41 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:05:07 ; elapsed = 00:05:11 . Memory (MB): peak = 1946.219 ; gain = 564.125 ; free physical = 2388 ; free virtual = 9276
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1946.219 ; gain = 0.000 ; free physical = 2388 ; free virtual = 9276
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/pisit/Documents/pong-game/final-project/final-project.runs/synth_1/system.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file system_utilization_synth.rpt -pb system_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun May 19 16:43:54 2019...
