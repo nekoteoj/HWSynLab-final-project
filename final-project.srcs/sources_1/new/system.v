@@ -47,11 +47,15 @@ module system
     input wire KEY0,            // KEY0 is reset
     input wire KEY1,            // KEY1 generates a maskable interrupt (INT)
     input wire KEY2,            // KEY2 generates a non-maskable interrupt (NMI)
+    input  wire PS2Data,
+    input  wire PS2Clk,
     output wire UART_TXD,
     output wire [3:0] an,
     output wire [6:0] seg,
     output wire dp,
-    output wire [7:0] led
+    output wire [3:0]vgaRed, vgaGreen, vgaBlue,
+    output wire Hsync, Vsync,
+    output wire [15:0] led
 );
 `default_nettype none
 
@@ -61,7 +65,7 @@ wire reset;
 wire locked;
 
 assign reset = locked & ~KEY0;
-assign UART_TXD = uart_tx;
+//assign UART_TXD = uart_tx;
 
 // ----------------- CPU PINS -----------------
 wire nM1;
@@ -177,17 +181,114 @@ ram #( .n(14)) ram_(
     .data_out(RamData)
 );
 
-seven_seg_display ssd(
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Instantiate Background VGA
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vga_test vga(
+    .clk(CLOCK_100), 
+//    .sw(sw),
+//    .push({btnL, btnU}),
+    .hsync(Hsync),
+    .vsync(Vsync),
+    .rgb({vgaRed, vgaGreen, vgaBlue})
+);
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Instantiate keyboard
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    wire        tready;
+    wire        ready;
+    wire        tstart;
+    reg         start=0;
+    reg         CLK50MHZ=0;
+    wire [31:0] tbuf;
+    reg  [15:0] keycodev=0;
+    wire [15:0] keycode;
+    wire [ 7:0] tbus;
+    reg  [ 2:0] bcount=0;
+    wire        flag;
+    reg         cn=0;
+    
+    always @(posedge(CLOCK_100))begin
+        CLK50MHZ<=~CLK50MHZ;
+    end
+    
+    PS2Receiver uut (
+        .clk(CLK50MHZ),
+        .kclk(PS2Clk),
+        .kdata(PS2Data),
+        .keycode(keycode),
+        .oflag(flag)
+    );
+    
+    reg [15:0] outcode = 0;
+    always @(posedge flag) begin
+        outcode <= keycode;
+    end
+    
+    wire [3:0] num3,num2,num1,num0;
+    assign {num3, num2, num1, num0} = keycodev;
+
+    ledDisplay ledDis(led,num3,num2,num1,num0);
+    
+    seven_seg_display ssd(
     .an(an),
     .seg(seg),
     .dp(dp),
-    .clk(clk_cpu),
-    .num3(4'b0001),
-    .num2(4'b0010),
-    .num1(4'b0011),
-    .num0(4'b0100)
-);
-
-//assign led = 4'b0000;
+    .clk(CLOCK_100),
+    .num3(num3),
+    .num2(num2),
+    .num1(num1),
+    .num0(num0)
+    );
+    
+    wire tx;
+    assign UART_TXD = tx;
+    
+    always@(keycode)
+        if (keycode[7:0] == 8'hf0) begin
+            cn <= 1'b0;
+            bcount <= 3'd0;
+        end else if (keycode[15:8] == 8'hf0) begin
+            cn <= keycode != keycodev;
+            bcount <= 3'd5;
+        end else begin
+            cn <= keycode[7:0] != keycodev[7:0] || keycodev[15:8] == 8'hf0;
+            bcount <= 3'd2;
+        end
+    
+    always@(posedge CLOCK_100)
+        if (flag == 1'b1 && cn == 1'b1) begin
+            start <= 1'b1;
+            keycodev <= keycode;
+        end else
+            start <= 1'b0;
+            
+    bin2ascii #(
+        .NBYTES(2)
+    ) conv (
+        .I(keycodev),
+        .O(tbuf)
+    );
+    
+    uart_buf_con tx_con (
+        .clk    (CLOCK_100),
+        .bcount (bcount),
+        .tbuf   (tbuf  ),  
+        .start  (start ), 
+        .ready  (ready ), 
+        .tstart (tstart),
+        .tready (tready),
+        .tbus   (tbus  )
+    );
+    
+    uart_tx get_tx (
+        .clk    (CLOCK_100),
+        .start  (tstart),
+        .tbus   (tbus),
+        .tx     (tx),
+        .ready  (tready)
+    );
 
 endmodule

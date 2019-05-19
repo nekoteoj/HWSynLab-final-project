@@ -1,16 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1558258712">
-  <File Type="VDS-TIMING-PB" Name="system_timing_summary_synth.pb"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="system_timing_summary_synth.rpt"/>
-  <File Type="RDS-DCP" Name="system.dcp"/>
-  <File Type="RDS-UTIL-PB" Name="system_utilization_synth.pb"/>
-  <File Type="RDS-UTIL" Name="system_utilization_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="system_drc_synth.rpt"/>
-  <File Type="RDS-RDS" Name="system.vds"/>
-  <File Type="REPORTS-TCL" Name="system_reports.tcl"/>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1558275689">
   <File Type="PA-TCL" Name="system.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="system_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="system_reports.tcl"/>
+  <File Type="RDS-RDS" Name="system.vds"/>
+  <File Type="RDS-UTIL" Name="system_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="system_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="system.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="system_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="system_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/hdl/PS2Receiver.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../kt/vivado_proj/Basys-3-Keyboard.srcs/sources_1/imports/hdl/PS2Receiver.v"/>
+        <Attr Name="ImportTime" Val="1535348632"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/imports/z80/address_latch.v">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../z80/address_latch.v"/>
@@ -164,6 +173,15 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl/bin2ascii.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../kt/vivado_proj/Basys-3-Keyboard.srcs/sources_1/imports/hdl/bin2ascii.v"/>
+        <Attr Name="ImportTime" Val="1535348632"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/imports/z80/bus_control.v">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../z80/bus_control.v"/>
@@ -241,28 +259,21 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl/debouncer.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../kt/vivado_proj/Basys-3-Keyboard.srcs/sources_1/imports/hdl/debouncer.v"/>
+        <Attr Name="ImportTime" Val="1535348632"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/imports/z80/decode_state.v">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../z80/decode_state.v"/>
         <Attr Name="ImportTime" Val="1558151082"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/z80/exec_matrix_compiled.vh">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../z80/exec_matrix_compiled.vh"/>
-        <Attr Name="ImportTime" Val="1558151082"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/z80/exec_zero.vh">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../z80/exec_zero.vh"/>
-        <Attr Name="ImportTime" Val="1558151082"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
@@ -277,6 +288,22 @@
     <File Path="$PSRCDIR/sources_1/imports/z80/temp_wires.vh">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../z80/temp_wires.vh"/>
+        <Attr Name="ImportTime" Val="1558151082"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/z80/exec_zero.vh">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../z80/exec_zero.vh"/>
+        <Attr Name="ImportTime" Val="1558151082"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/z80/exec_matrix_compiled.vh">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../z80/exec_matrix_compiled.vh"/>
         <Attr Name="ImportTime" Val="1558151082"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -334,6 +361,15 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/ledDisplay.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../kt/vivado_proj/Basys-3-Keyboard.srcs/sources_1/new/ledDisplay.v"/>
+        <Attr Name="ImportTime" Val="1558252178"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/imports/z80/memory_ifc.v">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../z80/memory_ifc.v"/>
@@ -363,6 +399,15 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/ram.v">
       <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/readBG.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../kt/HW-Lab-Lab06/Verilog/Lab06/Lab06.srcs/sources_1/new/readBG.v"/>
+        <Attr Name="ImportTime" Val="1558256417"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -420,11 +465,30 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/z80/coremodules.vh">
+    <File Path="$PSRCDIR/sources_1/imports/hdl/uart_buf_con.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../z80/coremodules.vh"/>
-        <Attr Name="ImportTime" Val="1558151082"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../kt/vivado_proj/Basys-3-Keyboard.srcs/sources_1/imports/hdl/uart_buf_con.v"/>
+        <Attr Name="ImportTime" Val="1535348632"/>
         <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl/uart_tx.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../kt/vivado_proj/Basys-3-Keyboard.srcs/sources_1/imports/hdl/uart_tx.v"/>
+        <Attr Name="ImportTime" Val="1535348632"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/vga.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../kt/HW-Lab-Lab06/Verilog/Lab06/Lab06.srcs/sources_1/new/vga.v"/>
+        <Attr Name="ImportTime" Val="1558261308"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
@@ -439,6 +503,14 @@
     <File Path="$PSRCDIR/sources_1/imports/z80/globals.vh">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../z80/globals.vh"/>
+        <Attr Name="ImportTime" Val="1558151082"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/z80/coremodules.vh">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../z80/coremodules.vh"/>
         <Attr Name="ImportTime" Val="1558151082"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -503,6 +575,14 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/imports/punnisa/ping.list">
+      <FileInfo SFType="MIF">
+        <Attr Name="ImportPath" Val="$PPRDIR/../kt/HW-Lab-Lab06/Verilog/Lab06/Lab06.srcs/sources_1/imports/punnisa/ping.list"/>
+        <Attr Name="ImportTime" Val="1558233697"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="system"/>
@@ -530,9 +610,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

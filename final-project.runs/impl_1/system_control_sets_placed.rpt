@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date         : Sun May 19 16:44:25 2019
-| Host         : pisit-neon running 64-bit KDE neon Unstable Edition
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sun May 19 21:29:30 2019
+| Host         : PAWIN-PRIME-NB running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file system_control_sets_placed.rpt
 | Design       : system
 | Device       : xc7a35t
@@ -23,8 +23,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |     4 |
-| Unused register locations in slices containing registers |    22 |
+| Number of unique control sets                            |    22 |
+| Unused register locations in slices containing registers |    87 |
 +----------------------------------------------------------+-------+
 
 
@@ -34,10 +34,14 @@ Table of Contents
 +--------+--------------+
 | Fanout | Control Sets |
 +--------+--------------+
-|      1 |            1 |
-|      2 |            1 |
-|      4 |            1 |
-|    16+ |            1 |
+|      1 |            4 |
+|      2 |            2 |
+|      4 |            3 |
+|      5 |            1 |
+|      7 |            2 |
+|      9 |            2 |
+|     11 |            1 |
+|    16+ |            7 |
 +--------+--------------+
 
 
@@ -47,25 +51,43 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |               7 |            4 |
+| No           | No                    | No                     |              29 |           17 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              27 |            7 |
-| Yes          | No                    | No                     |               0 |            0 |
+| No           | Yes                   | No                     |              43 |           11 |
+| Yes          | No                    | No                     |              97 |           32 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |               0 |            0 |
+| Yes          | Yes                   | No                     |              40 |           13 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+----------------------+---------------+------------------+------------------+----------------+
-|     Clock Signal     | Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count |
-+----------------------+---------------+------------------+------------------+----------------+
-|  pll_clk_BUFG        |               |                  |                1 |              1 |
-|  ssd/cd/CLK          |               |                  |                2 |              2 |
-|  CLOCK_100_IBUF_BUFG |               |                  |                1 |              4 |
-|  pll_clk_BUFG        |               | ssd/cd/clear     |                7 |             27 |
-+----------------------+---------------+------------------+------------------+----------------+
++----------------------+------------------------------------------+------------------------------------------+------------------+----------------+
+|     Clock Signal     |               Enable Signal              |             Set/Reset Signal             | Slice Load Count | Bel Load Count |
++----------------------+------------------------------------------+------------------------------------------+------------------+----------------+
+|  CLK50MHZ_BUFG       | uut/db_data/O_i_1__0_n_0                 |                                          |                1 |              1 |
+|  CLK50MHZ_BUFG       | uut/db_clk/O_i_1_n_0                     |                                          |                1 |              1 |
+|  CLK50MHZ_BUFG       | uut/db_clk/clear                         |                                          |                1 |              1 |
+|  CLK50MHZ_BUFG       | uut/db_data/Iv_i_1__0_n_0                |                                          |                1 |              1 |
+|  ssd/cd/CLK          |                                          |                                          |                1 |              2 |
+|  CLOCK_100_IBUF_BUFG | vga/vga_sync_unit/h_count_reg[9]_i_2_n_0 |                                          |                1 |              2 |
+| ~uut/db_clk/clk      | uut/cnt                                  | uut/cnt[3]_i_1_n_0                       |                1 |              4 |
+|  CLOCK_100_IBUF_BUFG | get_tx/count                             | get_tx/p_0_in                            |                1 |              4 |
+|  CLOCK_100_IBUF_BUFG | get_tx/running_reg_1[0]                  |                                          |                1 |              4 |
+|  CLK50MHZ_BUFG       | uut/db_data/count[4]_i_1__0_n_0          | uut/db_data/Iv_i_1__0_n_0                |                2 |              5 |
+|  CLK50MHZ_BUFG       |                                          |                                          |                3 |              7 |
+|  CLOCK_100_IBUF_BUFG | vga/vga_sync_unit/h_count_reg[9]_i_2_n_0 | vga/vga_sync_unit/h_count_reg[9]_i_1_n_0 |                2 |              7 |
+| ~uut/db_clk/clk      |                                          |                                          |                3 |              9 |
+|  CLOCK_100_IBUF_BUFG | get_tx/shift[8]_i_1_n_0                  |                                          |                2 |              9 |
+|  CLOCK_100_IBUF_BUFG |                                          |                                          |               10 |             11 |
+|  CLK50MHZ_BUFG       | uut/oflag_i_1_n_0                        |                                          |                3 |             16 |
+|  CLOCK_100_IBUF_BUFG |                                          | get_tx/p_0_in                            |                4 |             16 |
+|  CLOCK_100_IBUF_BUFG | uut/E[0]                                 |                                          |                3 |             16 |
+|  CLOCK_100_IBUF_BUFG | vga/vga_sync_unit/v_count_reg0           | vga/vga_sync_unit/v_count_reg[9]_i_1_n_0 |                7 |             20 |
+|  CLOCK_100_IBUF_BUFG | vga/vga_sync_unit/v_count_reg0           |                                          |               11 |             22 |
+|  CLOCK_100_IBUF_BUFG | get_tx/E[0]                              |                                          |                7 |             24 |
+|  CLOCK_100_IBUF_BUFG |                                          | ssd/cd/counter[0]_i_1_n_0                |                7 |             27 |
++----------------------+------------------------------------------+------------------------------------------+------------------+----------------+
 
 

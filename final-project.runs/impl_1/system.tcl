@@ -60,26 +60,22 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 
 start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param synth.incrementalSynthesisCache ./.Xil/Vivado-29983-pisit-neon/incrSyn
   set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7a35tcpg236-1
-  set_property board_part_repo_paths {/home/pisit/Downloads/Compressed/vivado-boards-master/new/board_files} [current_project]
   set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir /home/pisit/Documents/pong-game/final-project/final-project.cache/wt [current_project]
-  set_property parent.project_path /home/pisit/Documents/pong-game/final-project/final-project.xpr [current_project]
-  set_property ip_output_repo /home/pisit/Documents/pong-game/final-project/final-project.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.cache/wt [current_project]
+  set_property parent.project_path C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.xpr [current_project]
+  set_property ip_output_repo C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet /home/pisit/Documents/pong-game/final-project/final-project.runs/synth_1/system.dcp
-  read_xdc /home/pisit/Documents/pong-game/final-project/final-project.srcs/constrs_1/imports/VivadoProjects/Basys-3-Master.xdc
+  add_files -quiet C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.runs/synth_1/system.dcp
+  read_xdc C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/constrs_1/imports/VivadoProjects/Basys-3-Master.xdc
   link_design -top system -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
 } RESULT]
