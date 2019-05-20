@@ -1,74 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1558275689">
-  <File Type="BITSTR-BMM" Name="system_bd.bmm"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="system_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="system_timing_summary_init.rpt"/>
-  <File Type="ROUTE-PWR" Name="system_power_routed.rpt"/>
-  <File Type="PA-TCL" Name="system.tcl"/>
-  <File Type="OPT-TIMING" Name="system_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="system_opt.dcp"/>
-  <File Type="ROUTE-PWR-SUM" Name="system_power_summary_routed.pb"/>
-  <File Type="REPORTS-TCL" Name="system_reports.tcl"/>
-  <File Type="OPT-DRC" Name="system_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="system.hwdef"/>
-  <File Type="PWROPT-DCP" Name="system_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="system_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="system_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="system_placed.dcp"/>
-  <File Type="PLACE-IO" Name="system_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="system_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="system_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="system_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="system_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="system_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="system_incremental_reuse_pre_placed.rpt"/>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1558335577">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BG-DRC" Name="system.drc"/>
   <File Type="BG-BGN" Name="system.bgn"/>
-  <File Type="PLACE-TIMING" Name="system_timing_summary_placed.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="system_postplace_pwropt.dcp"/>
-  <File Type="BG-BIN" Name="system.bin"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="system_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="system_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="system_drc_physopted.rpt"/>
-  <File Type="BITSTR-MSK" Name="system.msk"/>
-  <File Type="PHYSOPT-TIMING" Name="system_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="system_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="system_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="system_routed_bb.dcp"/>
-  <File Type="ROUTE-DRC" Name="system_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="system_drc_routed.pb"/>
+  <File Type="BITSTR-SYSDEF" Name="system.sysdef"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="system.ltx"/>
-  <File Type="ROUTE-DRC-RPX" Name="system_drc_routed.rpx"/>
   <File Type="BITSTR-MMI" Name="system.mmi"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="system_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="system_methodology_drc_routed.rpx"/>
-  <File Type="BITSTR-SYSDEF" Name="system.sysdef"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="system_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-PWR-RPX" Name="system_power_routed.rpx"/>
-  <File Type="ROUTE-STATUS" Name="system_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="system_route_status.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="system_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-TIMING-PB" Name="system_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="system_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="system_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="system_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="system_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="system_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="system_bus_skew_routed.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="system_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="system_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="system_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="system_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="system_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="system_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="system_bus_skew_postroute_physopted.pb"/>
+  <File Type="BITSTR-BMM" Name="system_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="system.nky"/>
+  <File Type="BITSTR-RBT" Name="system.rbt"/>
+  <File Type="BITSTR-MSK" Name="system.msk"/>
+  <File Type="BG-BIN" Name="system.bin"/>
   <File Type="BG-BIT" Name="system.bit"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="system_bus_skew_postroute_physopted.rpx"/>
-  <File Type="BITSTR-RBT" Name="system.rbt"/>
-  <File Type="BITSTR-NKY" Name="system.nky"/>
-  <File Type="BG-DRC" Name="system.drc"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="system_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="system_bus_skew_postroute_physopted.rpt"/>
   <File Type="RDI-RDI" Name="system.vdi"/>
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="system_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="system_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="system_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="system_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="system_postroute_physopt.dcp"/>
+  <File Type="ROUTE-BUS-SKEW" Name="system_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="system_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="system_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="system_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="system_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="system_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="system_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="system_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="system_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="system_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="system_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="system_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="system_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="system_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="system_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="system_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="system_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="system_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="system_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="system_routed_error.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="system_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="system_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="system_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="system_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="system_postplace_pwropt.dcp"/>
+  <File Type="PLACE-TIMING" Name="system_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="system_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="system_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="system_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="system_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="system_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="system_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="system_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="system_placed.dcp"/>
+  <File Type="PWROPT-TIMING" Name="system_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="system_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="system_pwropt.dcp"/>
+  <File Type="OPT-TIMING" Name="system_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="system.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="system_methodology_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="system_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="system_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="system_timing_summary_init.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="system_bus_skew_routed.rpx"/>
+  <File Type="REPORTS-TCL" Name="system_reports.tcl"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="system_bus_skew_routed.pb"/>
+  <File Type="PA-TCL" Name="system.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/hdl/PS2Receiver.v">
@@ -276,13 +276,6 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/clock_generator.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/imports/z80/control_pins_n.v">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../z80/control_pins_n.v"/>
@@ -337,17 +330,9 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/z80/exec_module.vh">
+    <File Path="$PSRCDIR/sources_1/imports/z80/exec_matrix_compiled.vh">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../z80/exec_module.vh"/>
-        <Attr Name="ImportTime" Val="1558151082"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/z80/temp_wires.vh">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../z80/temp_wires.vh"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../z80/exec_matrix_compiled.vh"/>
         <Attr Name="ImportTime" Val="1558151082"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -361,9 +346,17 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/z80/exec_matrix_compiled.vh">
+    <File Path="$PSRCDIR/sources_1/imports/z80/exec_module.vh">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../z80/exec_matrix_compiled.vh"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../z80/exec_module.vh"/>
+        <Attr Name="ImportTime" Val="1558151082"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/z80/temp_wires.vh">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../z80/temp_wires.vh"/>
         <Attr Name="ImportTime" Val="1558151082"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -421,10 +414,8 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/new/ledDisplay.v">
+    <File Path="$PSRCDIR/sources_1/new/keyboard_io.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../kt/vivado_proj/Basys-3-Keyboard.srcs/sources_1/new/ledDisplay.v"/>
-        <Attr Name="ImportTime" Val="1558252178"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -552,6 +543,14 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/imports/z80/coremodules.vh">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../z80/coremodules.vh"/>
+        <Attr Name="ImportTime" Val="1558151082"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/imports/z80/core.vh">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../z80/core.vh"/>
@@ -568,14 +567,6 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/z80/coremodules.vh">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../z80/coremodules.vh"/>
-        <Attr Name="ImportTime" Val="1558151082"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/imports/z80/z80_top_direct_n.v">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../z80/z80_top_direct_n.v"/>
@@ -587,6 +578,24 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/system.v">
       <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/clock_generator.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/ledDisplay.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../kt/vivado_proj/Basys-3-Keyboard.srcs/sources_1/new/ledDisplay.v"/>
+        <Attr Name="ImportTime" Val="1558252178"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>

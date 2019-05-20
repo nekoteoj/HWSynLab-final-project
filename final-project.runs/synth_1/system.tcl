@@ -23,80 +23,80 @@ create_project -in_memory -part xc7a35tcpg236-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.cache/wt [current_project]
-set_property parent.project_path C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.xpr [current_project]
+set_property webtalk.parent_dir /home/pisit/Documents/pong-game/final-project/final-project.cache/wt [current_project]
+set_property parent.project_path /home/pisit/Documents/pong-game/final-project/final-project.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
+set_property board_part_repo_paths {/home/pisit/Downloads/Compressed/vivado-boards-master/new/board_files} [current_project]
 set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
-set_property ip_output_repo c:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.cache/ip [current_project]
+set_property ip_output_repo /home/pisit/Documents/pong-game/final-project/final-project.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog {
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/imports/z80/exec_module.vh
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/imports/z80/temp_wires.vh
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/imports/z80/exec_zero.vh
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/imports/z80/exec_matrix_compiled.vh
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/imports/z80/core.vh
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/imports/z80/globals.vh
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/imports/z80/coremodules.vh
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/exec_matrix_compiled.vh
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/exec_zero.vh
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/exec_module.vh
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/temp_wires.vh
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/coremodules.vh
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/core.vh
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/globals.vh
 }
 read_mem {
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/imports/work/ram.mif
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/imports/punnisa/ping.list
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/work/ram.mif
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/punnisa/ping.list
 }
 read_verilog -library xil_defaultlib {
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/imports/hdl/PS2Receiver.v
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/imports/z80/address_latch.v
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/imports/z80/address_mux.v
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/imports/z80/address_pins.v
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/imports/z80/alu.v
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/imports/z80/alu_bit_select.v
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/imports/z80/alu_control.v
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/imports/z80/alu_core.v
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/imports/z80/alu_flags.v
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/imports/z80/alu_mux_2.v
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/imports/z80/alu_mux_2z.v
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/imports/z80/alu_mux_3z.v
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/imports/z80/alu_mux_4.v
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/imports/z80/alu_mux_8.v
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/imports/z80/alu_prep_daa.v
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/imports/z80/alu_select.v
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/imports/z80/alu_shifter_core.v
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/imports/z80/alu_slice.v
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/imports/hdl/bin2ascii.v
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/imports/z80/bus_control.v
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/imports/z80/bus_switch.v
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/imports/z80/clk_delay.v
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/new/clock_divider.v
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/new/clock_generator.v
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/imports/z80/control_pins_n.v
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/imports/z80/data_pins.v
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/imports/z80/data_switch.v
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/imports/z80/data_switch_mask.v
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/imports/hdl/debouncer.v
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/imports/z80/decode_state.v
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/imports/z80/execute.v
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/new/hex_to_seven_seg.v
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/imports/z80/inc_dec.v
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/imports/z80/inc_dec_2bit.v
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/imports/z80/interrupts.v
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/imports/z80/ir.v
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/imports/new/ledDisplay.v
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/imports/z80/memory_ifc.v
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/imports/z80/pin_control.v
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/imports/z80/pla_decode.v
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/new/ram.v
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/imports/new/readBG.v
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/imports/z80/reg_control.v
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/imports/z80/reg_file.v
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/imports/z80/reg_latch.v
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/imports/z80/resets.v
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/imports/z80/sequencer.v
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/new/seven_seg_display.v
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/imports/hdl/uart_buf_con.v
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/imports/hdl/uart_tx.v
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/imports/new/vga.v
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/imports/z80/z80_top_direct_n.v
-  C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/sources_1/new/system.v
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/hdl/PS2Receiver.v
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/address_latch.v
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/address_mux.v
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/address_pins.v
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/alu.v
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/alu_bit_select.v
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/alu_control.v
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/alu_core.v
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/alu_flags.v
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/alu_mux_2.v
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/alu_mux_2z.v
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/alu_mux_3z.v
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/alu_mux_4.v
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/alu_mux_8.v
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/alu_prep_daa.v
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/alu_select.v
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/alu_shifter_core.v
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/alu_slice.v
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/hdl/bin2ascii.v
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/bus_control.v
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/bus_switch.v
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/clk_delay.v
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/clock_divider.v
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/control_pins_n.v
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/data_pins.v
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/data_switch.v
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/data_switch_mask.v
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/hdl/debouncer.v
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/decode_state.v
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/execute.v
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/hex_to_seven_seg.v
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/inc_dec.v
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/inc_dec_2bit.v
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/interrupts.v
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/ir.v
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/keyboard_io.v
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/memory_ifc.v
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/pin_control.v
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/pla_decode.v
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/ram.v
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/new/readBG.v
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/reg_control.v
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/reg_file.v
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/reg_latch.v
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/resets.v
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/sequencer.v
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/seven_seg_display.v
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/hdl/uart_buf_con.v
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/hdl/uart_tx.v
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/new/vga.v
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/z80_top_direct_n.v
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -106,8 +106,8 @@ read_verilog -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/constrs_1/imports/VivadoProjects/Basys-3-Master.xdc
-set_property used_in_implementation false [get_files C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.srcs/constrs_1/imports/VivadoProjects/Basys-3-Master.xdc]
+read_xdc /home/pisit/Documents/pong-game/final-project/final-project.srcs/constrs_1/imports/VivadoProjects/Basys-3-Master.xdc
+set_property used_in_implementation false [get_files /home/pisit/Documents/pong-game/final-project/final-project.srcs/constrs_1/imports/VivadoProjects/Basys-3-Master.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

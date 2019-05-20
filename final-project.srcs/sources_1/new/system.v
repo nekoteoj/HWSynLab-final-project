@@ -64,7 +64,8 @@ wire uart_tx;
 wire reset;
 wire locked;
 
-assign reset = locked & ~KEY0;
+//assign reset = locked & ~KEY0;
+assign reset = ~KEY0;
 //assign UART_TXD = uart_tx;
 
 // ----------------- CPU PINS -----------------
@@ -93,7 +94,9 @@ wire clk_uart; // 50MHz clock for UART
 
 //clock pll ( .CLK_IN1(CLOCK_100), .CLK_OUT1(pll_clk), .CLK_OUT2(clk_uart), .LOCKED(locked) );
 
-clock_generator clock_gen(.cpu_clk(pll_clk), .clk(CLOCK_100));
+//clock_generator clock_gen(.cpu_clk(pll_clk), .clk(CLOCK_100));
+clock_divider #(200) clk_dvvv(pll_clk, CLOCK_100);
+//assign led = A;
 //assign pll_clk = CLOCK_100;
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -113,6 +116,7 @@ wire clk_cpu = pll_clk; // CPU clock == PLL1 clock
 // ----------------- INTERNAL WIRES -----------------
 wire [7:0] RamData; // Data writer from the RAM module
 wire [7:0] CpuData;
+wire [7:0] KeyboardData;
 assign CpuData = nRD==0 ? D[7:0] : {nIORQ,nRD,nWR}==3'b011 ? 8'h80 : {8{1'bz}};
 
 wire RamWE;
@@ -128,7 +132,12 @@ always @(*) // always_comb
 begin
     case ({nIORQ,nRD,nWR})
         // -------------------------------- Memory read --------------------------------
-        3'b101: D[7:0] = RamData;
+        3'b101: begin
+            D[7:0] = RamData;
+            if (A[13:0] == 14'h1000 || A[13:0] == 14'h1001) begin
+                D[7:0] = KeyboardData;
+            end
+        end
         // -------------------------------- Memory write -------------------------------
         3'b110: D[7:0] = CpuData;
         // ---------------------------------- IO write ---------------------------------
@@ -181,6 +190,17 @@ ram #( .n(14)) ram_(
     .data_out(RamData)
 );
 
+wire [15:0] ooo;
+keyboard_io keyboard_io_(
+    .clk(clk_cpu),
+    .addr(A[13:0]),
+    .we(RamWE),
+    .data_in(D),
+    .data_out(KeyboardData),
+    .dat(ooo)
+);
+assign led = ooo;
+
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Instantiate Background VGA
@@ -230,7 +250,7 @@ vga_test vga(
     wire [3:0] num3,num2,num1,num0;
     assign {num3, num2, num1, num0} = keycodev;
 
-    ledDisplay ledDis(led,num3,num2,num1,num0);
+    // ledDisplay ledDis(led,num3,num2,num1,num0);
     
     seven_seg_display ssd(
     .an(an),

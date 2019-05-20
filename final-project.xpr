@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="39" Path="C:/Users/Pawin/Desktop/punnisa/HWSynLab-final-project/final-project.xpr">
+<Project Version="7" Minor="39" Path="/home/pisit/Documents/pong-game/final-project/final-project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="eb5957237bfa4418838734ee4c35546b"/>
@@ -266,13 +266,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/clock_generator.v">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/z80/control_pins_n.v">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../z80/control_pins_n.v"/>
@@ -327,17 +320,9 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/z80/exec_module.vh">
+      <File Path="$PSRCDIR/sources_1/imports/z80/exec_matrix_compiled.vh">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../z80/exec_module.vh"/>
-          <Attr Name="ImportTime" Val="1558151082"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/z80/temp_wires.vh">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../z80/temp_wires.vh"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../z80/exec_matrix_compiled.vh"/>
           <Attr Name="ImportTime" Val="1558151082"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -351,9 +336,17 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/z80/exec_matrix_compiled.vh">
+      <File Path="$PSRCDIR/sources_1/imports/z80/exec_module.vh">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../z80/exec_matrix_compiled.vh"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../z80/exec_module.vh"/>
+          <Attr Name="ImportTime" Val="1558151082"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/z80/temp_wires.vh">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../z80/temp_wires.vh"/>
           <Attr Name="ImportTime" Val="1558151082"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -411,10 +404,8 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/new/ledDisplay.v">
+      <File Path="$PSRCDIR/sources_1/new/keyboard_io.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../kt/vivado_proj/Basys-3-Keyboard.srcs/sources_1/new/ledDisplay.v"/>
-          <Attr Name="ImportTime" Val="1558252178"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -542,6 +533,14 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/imports/z80/coremodules.vh">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../z80/coremodules.vh"/>
+          <Attr Name="ImportTime" Val="1558151082"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/imports/z80/core.vh">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../z80/core.vh"/>
@@ -558,14 +557,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/z80/coremodules.vh">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../z80/coremodules.vh"/>
-          <Attr Name="ImportTime" Val="1558151082"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/z80/z80_top_direct_n.v">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../z80/z80_top_direct_n.v"/>
@@ -577,6 +568,24 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/system.v">
         <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/clock_generator.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/ledDisplay.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../kt/vivado_proj/Basys-3-Keyboard.srcs/sources_1/new/ledDisplay.v"/>
+          <Attr Name="ImportTime" Val="1558252178"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -683,11 +692,17 @@
     <Simulator Name="Questa">
       <Option Name="Description" Val="Questa Advanced Simulator"/>
     </Simulator>
+    <Simulator Name="IES">
+      <Option Name="Description" Val="Incisive Enterprise Simulator (IES)"/>
+    </Simulator>
+    <Simulator Name="Xcelium">
+      <Option Name="Description" Val="Xcelium Parallel Simulator"/>
+    </Simulator>
+    <Simulator Name="VCS">
+      <Option Name="Description" Val="Verilog Compiler Simulator (VCS)"/>
+    </Simulator>
     <Simulator Name="Riviera">
       <Option Name="Description" Val="Riviera-PRO Simulator"/>
-    </Simulator>
-    <Simulator Name="ActiveHDL">
-      <Option Name="Description" Val="Active-HDL Simulator"/>
     </Simulator>
   </Simulators>
   <Runs Version="1" Minor="10">

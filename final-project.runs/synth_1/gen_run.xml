@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1558275689">
-  <File Type="PA-TCL" Name="system.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="system_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="system_reports.tcl"/>
-  <File Type="RDS-RDS" Name="system.vds"/>
-  <File Type="RDS-UTIL" Name="system_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="system_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="system.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="system_timing_summary_synth.rpt"/>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1558335577">
   <File Type="VDS-TIMING-PB" Name="system_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="system_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="system.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="system_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="system_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="system_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="system.vds"/>
+  <File Type="REPORTS-TCL" Name="system_reports.tcl"/>
+  <File Type="PA-TCL" Name="system.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/hdl/PS2Receiver.v">
@@ -216,13 +216,6 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/clock_generator.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/imports/z80/control_pins_n.v">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../z80/control_pins_n.v"/>
@@ -277,17 +270,9 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/z80/exec_module.vh">
+    <File Path="$PSRCDIR/sources_1/imports/z80/exec_matrix_compiled.vh">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../z80/exec_module.vh"/>
-        <Attr Name="ImportTime" Val="1558151082"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/z80/temp_wires.vh">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../z80/temp_wires.vh"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../z80/exec_matrix_compiled.vh"/>
         <Attr Name="ImportTime" Val="1558151082"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -301,9 +286,17 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/z80/exec_matrix_compiled.vh">
+    <File Path="$PSRCDIR/sources_1/imports/z80/exec_module.vh">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../z80/exec_matrix_compiled.vh"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../z80/exec_module.vh"/>
+        <Attr Name="ImportTime" Val="1558151082"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/z80/temp_wires.vh">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../z80/temp_wires.vh"/>
         <Attr Name="ImportTime" Val="1558151082"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -361,10 +354,8 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/new/ledDisplay.v">
+    <File Path="$PSRCDIR/sources_1/new/keyboard_io.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../kt/vivado_proj/Basys-3-Keyboard.srcs/sources_1/new/ledDisplay.v"/>
-        <Attr Name="ImportTime" Val="1558252178"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -492,6 +483,14 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/imports/z80/coremodules.vh">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../z80/coremodules.vh"/>
+        <Attr Name="ImportTime" Val="1558151082"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/imports/z80/core.vh">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../z80/core.vh"/>
@@ -508,14 +507,6 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/z80/coremodules.vh">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../z80/coremodules.vh"/>
-        <Attr Name="ImportTime" Val="1558151082"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/imports/z80/z80_top_direct_n.v">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../z80/z80_top_direct_n.v"/>
@@ -527,6 +518,24 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/system.v">
       <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/clock_generator.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/ledDisplay.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../kt/vivado_proj/Basys-3-Keyboard.srcs/sources_1/new/ledDisplay.v"/>
+        <Attr Name="ImportTime" Val="1558252178"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>

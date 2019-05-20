@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Sun May 19 21:29:30 2019
-| Host         : PAWIN-PRIME-NB running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Mon May 20 14:06:33 2019
+| Host         : pisit-neon running 64-bit KDE neon Unstable Edition
 | Command      : report_control_sets -verbose -file system_control_sets_placed.rpt
 | Design       : system
 | Device       : xc7a35t
@@ -23,8 +23,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    22 |
-| Unused register locations in slices containing registers |    87 |
+| Number of unique control sets                            |    74 |
+| Unused register locations in slices containing registers |   167 |
 +----------------------------------------------------------+-------+
 
 
@@ -34,14 +34,17 @@ Table of Contents
 +--------+--------------+
 | Fanout | Control Sets |
 +--------+--------------+
-|      1 |            4 |
-|      2 |            2 |
-|      4 |            3 |
-|      5 |            1 |
+|      1 |            8 |
+|      2 |            4 |
+|      3 |            1 |
+|      4 |            5 |
+|      5 |            3 |
 |      7 |            2 |
+|      8 |           35 |
 |      9 |            2 |
-|     11 |            1 |
-|    16+ |            7 |
+|     12 |            2 |
+|     14 |            1 |
+|    16+ |           11 |
 +--------+--------------+
 
 
@@ -51,43 +54,95 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              29 |           17 |
-| No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              43 |           11 |
-| Yes          | No                    | No                     |              97 |           32 |
-| Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              40 |           13 |
+| No           | No                    | No                     |              53 |           29 |
+| No           | No                    | Yes                    |              25 |           18 |
+| No           | Yes                   | No                     |              70 |           18 |
+| Yes          | No                    | No                     |             390 |          144 |
+| Yes          | No                    | Yes                    |              49 |           22 |
+| Yes          | Yes                   | No                     |              46 |           12 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+----------------------+------------------------------------------+------------------------------------------+------------------+----------------+
-|     Clock Signal     |               Enable Signal              |             Set/Reset Signal             | Slice Load Count | Bel Load Count |
-+----------------------+------------------------------------------+------------------------------------------+------------------+----------------+
-|  CLK50MHZ_BUFG       | uut/db_data/O_i_1__0_n_0                 |                                          |                1 |              1 |
-|  CLK50MHZ_BUFG       | uut/db_clk/O_i_1_n_0                     |                                          |                1 |              1 |
-|  CLK50MHZ_BUFG       | uut/db_clk/clear                         |                                          |                1 |              1 |
-|  CLK50MHZ_BUFG       | uut/db_data/Iv_i_1__0_n_0                |                                          |                1 |              1 |
-|  ssd/cd/CLK          |                                          |                                          |                1 |              2 |
-|  CLOCK_100_IBUF_BUFG | vga/vga_sync_unit/h_count_reg[9]_i_2_n_0 |                                          |                1 |              2 |
-| ~uut/db_clk/clk      | uut/cnt                                  | uut/cnt[3]_i_1_n_0                       |                1 |              4 |
-|  CLOCK_100_IBUF_BUFG | get_tx/count                             | get_tx/p_0_in                            |                1 |              4 |
-|  CLOCK_100_IBUF_BUFG | get_tx/running_reg_1[0]                  |                                          |                1 |              4 |
-|  CLK50MHZ_BUFG       | uut/db_data/count[4]_i_1__0_n_0          | uut/db_data/Iv_i_1__0_n_0                |                2 |              5 |
-|  CLK50MHZ_BUFG       |                                          |                                          |                3 |              7 |
-|  CLOCK_100_IBUF_BUFG | vga/vga_sync_unit/h_count_reg[9]_i_2_n_0 | vga/vga_sync_unit/h_count_reg[9]_i_1_n_0 |                2 |              7 |
-| ~uut/db_clk/clk      |                                          |                                          |                3 |              9 |
-|  CLOCK_100_IBUF_BUFG | get_tx/shift[8]_i_1_n_0                  |                                          |                2 |              9 |
-|  CLOCK_100_IBUF_BUFG |                                          |                                          |               10 |             11 |
-|  CLK50MHZ_BUFG       | uut/oflag_i_1_n_0                        |                                          |                3 |             16 |
-|  CLOCK_100_IBUF_BUFG |                                          | get_tx/p_0_in                            |                4 |             16 |
-|  CLOCK_100_IBUF_BUFG | uut/E[0]                                 |                                          |                3 |             16 |
-|  CLOCK_100_IBUF_BUFG | vga/vga_sync_unit/v_count_reg0           | vga/vga_sync_unit/v_count_reg[9]_i_1_n_0 |                7 |             20 |
-|  CLOCK_100_IBUF_BUFG | vga/vga_sync_unit/v_count_reg0           |                                          |               11 |             22 |
-|  CLOCK_100_IBUF_BUFG | get_tx/E[0]                              |                                          |                7 |             24 |
-|  CLOCK_100_IBUF_BUFG |                                          | ssd/cd/counter[0]_i_1_n_0                |                7 |             27 |
-+----------------------+------------------------------------------+------------------------------------------+------------------+----------------+
++----------------------+---------------------------------------------+------------------------------------------+------------------+----------------+
+|     Clock Signal     |                Enable Signal                |             Set/Reset Signal             | Slice Load Count | Bel Load Count |
++----------------------+---------------------------------------------+------------------------------------------+------------------+----------------+
+|  KEY2_IBUF_BUFG      |                                             | z80_/resets_/SYNTHESIZED_WIRE_12_reg_0   |                1 |              1 |
+|  pll_clk_BUFG        |                                             | z80_/interrupts_/iff1_i_2_n_0            |                1 |              1 |
+|  CLK50MHZ_BUFG       | uut/db_clk/clear                            |                                          |                1 |              1 |
+|  CLK50MHZ_BUFG       | uut/db_data/O_i_1__0_n_0                    |                                          |                1 |              1 |
+| ~pll_clk_BUFG        |                                             | z80_/fpga_reset                          |                1 |              1 |
+|  CLK50MHZ_BUFG       | uut/db_data/Iv_i_1__0_n_0                   |                                          |                1 |              1 |
+|  CLK50MHZ_BUFG       | uut/db_clk/O_i_1_n_0                        |                                          |                1 |              1 |
+|  pll_clk_BUFG        |                                             | z80_/fpga_reset                          |                1 |              1 |
+|  CLOCK_100_IBUF_BUFG | vga/vga_sync_unit/h_count_reg[9]_i_2_n_0    |                                          |                1 |              2 |
+| ~pll_clk_BUFG        |                                             | z80_/resets_/SYNTHESIZED_WIRE_12         |                2 |              2 |
+|  pll_clk_BUFG        |                                             | z80_/interrupts_/int_armed_i_2_n_0       |                2 |              2 |
+|  ssd/cd/CLK          |                                             |                                          |                1 |              2 |
+| ~pll_clk_BUFG        |                                             |                                          |                1 |              3 |
+|  CLOCK_100_IBUF_BUFG | get_tx/count                                | get_tx/p_0_in                            |                1 |              4 |
+| ~pll_clk_BUFG        | z80_/sequencer_/SYNTHESIZED_WIRE_20         | z80_/execute_/ctl_alu_op1_sel_zero       |                1 |              4 |
+| ~uut/db_clk/clk      | uut/cnt                                     | uut/cnt[3]_i_1_n_0                       |                1 |              4 |
+|  CLOCK_100_IBUF_BUFG | uut/running_reg[0]                          |                                          |                1 |              4 |
+| ~pll_clk_BUFG        | z80_/sequencer_/opcode_reg[3]_0[0]          |                                          |                2 |              4 |
+|  pll_clk_BUFG        | z80_/ir_/ena_M                              | z80_/resets_/SYNTHESIZED_WIRE_12         |                4 |              5 |
+|  pll_clk_BUFG        | z80_/sequencer_/DFFE_T4_ff_reg_9            |                                          |                3 |              5 |
+|  CLK50MHZ_BUFG       | uut/db_data/count[4]_i_1__0_n_0             | uut/db_data/Iv_i_1__0_n_0                |                1 |              5 |
+|  CLOCK_100_IBUF_BUFG | vga/vga_sync_unit/h_count_reg[9]_i_2_n_0    | vga/vga_sync_unit/h_count_reg[9]_i_1_n_0 |                1 |              7 |
+|  CLK50MHZ_BUFG       |                                             |                                          |                2 |              7 |
+|  pll_clk_BUFG        | z80_/sequencer_/DFFE_T3_ff_reg_6[0]         |                                          |                3 |              8 |
+|  pll_clk_BUFG        | z80_/sequencer_/bank_exx_reg[0]             |                                          |                2 |              8 |
+|  pll_clk_BUFG        | z80_/sequencer_/DFFE_inst4_reg[0]           |                                          |                2 |              8 |
+|  pll_clk_BUFG        | z80_/sequencer_/DFFE_inst4_reg_0[0]         |                                          |                4 |              8 |
+|  pll_clk_BUFG        | z80_/sequencer_/DFFE_inst4_reg_1[0]         |                                          |                2 |              8 |
+|  pll_clk_BUFG        | z80_/sequencer_/DFFE_inst4_reg_2[0]         |                                          |                2 |              8 |
+|  pll_clk_BUFG        | z80_/sequencer_/DFFE_inst4_reg_3[0]         |                                          |                1 |              8 |
+|  pll_clk_BUFG        | z80_/sequencer_/DFFE_inst4_reg_4[0]         |                                          |                3 |              8 |
+|  pll_clk_BUFG        | z80_/sequencer_/DFFE_inst4_reg_5[0]         |                                          |                3 |              8 |
+|  pll_clk_BUFG        | z80_/sequencer_/DFFE_inst4_reg_6[0]         |                                          |                4 |              8 |
+|  pll_clk_BUFG        | z80_/sequencer_/DFFE_inst4_reg_7[0]         |                                          |                2 |              8 |
+|  pll_clk_BUFG        | z80_/sequencer_/DFFE_inst4_reg_8[0]         |                                          |                3 |              8 |
+|  pll_clk_BUFG        | z80_/sequencer_/DFFE_instIY1_reg[0]         |                                          |                4 |              8 |
+|  pll_clk_BUFG        | z80_/sequencer_/DFFE_instIY1_reg_0[0]       |                                          |                2 |              8 |
+|  pll_clk_BUFG        | z80_/sequencer_/E[0]                        |                                          |                2 |              8 |
+|  pll_clk_BUFG        | z80_/sequencer_/bank_af_reg[0]              |                                          |                2 |              8 |
+|  pll_clk_BUFG        | z80_/sequencer_/bank_af_reg_0[0]            |                                          |                3 |              8 |
+|  pll_clk_BUFG        | z80_/sequencer_/bank_af_reg_1[0]            |                                          |                2 |              8 |
+|  pll_clk_BUFG        | z80_/sequencer_/DFFE_T3_ff_reg_5[0]         |                                          |                3 |              8 |
+| ~pll_clk_BUFG        | z80_/sequencer_/opcode_reg[3][0]            |                                          |                4 |              8 |
+| ~pll_clk_BUFG        | z80_/sequencer_/DFFE_T3_ff_reg_15[0]        |                                          |                5 |              8 |
+| ~pll_clk_BUFG        | z80_/clk_delay_/DFF_inst5_reg_0             | z80_/resets_/SYNTHESIZED_WIRE_12         |                3 |              8 |
+|  pll_clk_BUFG        | z80_/sequencer_/opcode_reg[1]_0[0]          |                                          |                3 |              8 |
+|  pll_clk_BUFG        | z80_/sequencer_/opcode_reg[1][0]            |                                          |                2 |              8 |
+|  pll_clk_BUFG        | z80_/address_pins_/reg_array[0][7]_i_2_0[0] |                                          |                4 |              8 |
+|  pll_clk_BUFG        | z80_/sequencer_/latch[7]_i_3__0_0[0]        |                                          |                3 |              8 |
+|  pll_clk_BUFG        | z80_/execute_/DFFE_M4_ff_reg[0]             | z80_/resets_/SYNTHESIZED_WIRE_12         |                2 |              8 |
+|  pll_clk_BUFG        | z80_/sequencer_/bank_exx_reg_2[0]           |                                          |                2 |              8 |
+|  pll_clk_BUFG        | z80_/sequencer_/bank_exx_reg_1[0]           |                                          |                2 |              8 |
+|  pll_clk_BUFG        | z80_/ir_/E[0]                               |                                          |                3 |              8 |
+|  pll_clk_BUFG        | z80_/memory_ifc_/DFFE_apin_latch_reg[0][0]  |                                          |                2 |              8 |
+|  pll_clk_BUFG        | z80_/memory_ifc_/E[0]                       |                                          |                5 |              8 |
+|  pll_clk_BUFG        | z80_/sequencer_/bank_exx_reg_0[0]           |                                          |                2 |              8 |
+|  pll_clk_BUFG        | z80_/sequencer_/DFFE_T2_ff_reg_4[0]         |                                          |                4 |              8 |
+|  pll_clk_BUFG        | z80_/sequencer_/DFFE_T3_ff_reg_4[0]         |                                          |                5 |              8 |
+| ~uut/db_clk/clk      |                                             |                                          |                3 |              9 |
+|  CLOCK_100_IBUF_BUFG | get_tx/shift[8]_i_1_n_0                     |                                          |                3 |              9 |
+|  pll_clk_BUFG        | z80_/clk_delay_/DFF_inst5_reg_0             | z80_/resets_/SYNTHESIZED_WIRE_12         |                7 |             12 |
+|  CLOCK_100_IBUF_BUFG |                                             |                                          |                9 |             12 |
+| ~pll_clk_BUFG        | z80_/sequencer_/DFFE_M1_ff_reg_4[0]         |                                          |               11 |             14 |
+|  CLOCK_100_IBUF_BUFG |                                             | get_tx/p_0_in                            |                4 |             16 |
+|  pll_clk_BUFG        | z80_/execute_/E[0]                          | z80_/resets_/SYNTHESIZED_WIRE_12         |                6 |             16 |
+|  CLK50MHZ_BUFG       | uut/oflag_i_1_n_0                           |                                          |                3 |             16 |
+|  CLOCK_100_IBUF_BUFG | uut/E[0]                                    |                                          |                4 |             16 |
+|  pll_clk_BUFG        |                                             | z80_/resets_/SYNTHESIZED_WIRE_12         |               10 |             17 |
+|  pll_clk_BUFG        |                                             |                                          |               13 |             20 |
+|  CLOCK_100_IBUF_BUFG | vga/vga_sync_unit/v_count_reg0              | vga/vga_sync_unit/v_count_reg[9]_i_1_n_0 |                7 |             22 |
+|  CLOCK_100_IBUF_BUFG | get_tx/E[0]                                 |                                          |                6 |             24 |
+|  CLOCK_100_IBUF_BUFG |                                             | clk_dvvv/counter[0]_i_1_n_0              |                7 |             27 |
+|  CLOCK_100_IBUF_BUFG |                                             | ssd/cd/counter[0]_i_1__0_n_0             |                7 |             27 |
+|  CLOCK_100_IBUF_BUFG | vga/vga_sync_unit/v_count_reg0              |                                          |               11 |             28 |
++----------------------+---------------------------------------------+------------------------------------------+------------------+----------------+
 
 
