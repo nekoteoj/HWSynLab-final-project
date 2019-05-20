@@ -94,8 +94,8 @@ wire clk_uart; // 50MHz clock for UART
 
 //clock pll ( .CLK_IN1(CLOCK_100), .CLK_OUT1(pll_clk), .CLK_OUT2(clk_uart), .LOCKED(locked) );
 
-//clock_generator clock_gen(.cpu_clk(pll_clk), .clk(CLOCK_100));
-clock_divider #(200) clk_dvvv(pll_clk, CLOCK_100);
+clock_generator clock_gen(.cpu_clk(pll_clk), .clk(CLOCK_100));
+//clock_divider #(200) clk_dvvv(pll_clk, CLOCK_100);
 //assign led = A;
 //assign pll_clk = CLOCK_100;
 
@@ -117,6 +117,7 @@ wire clk_cpu = pll_clk; // CPU clock == PLL1 clock
 wire [7:0] RamData; // Data writer from the RAM module
 wire [7:0] CpuData;
 wire [7:0] KeyboardData;
+wire [7:0] VGAData;
 assign CpuData = nRD==0 ? D[7:0] : {nIORQ,nRD,nWR}==3'b011 ? 8'h80 : {8{1'bz}};
 
 wire RamWE;
@@ -134,8 +135,10 @@ begin
         // -------------------------------- Memory read --------------------------------
         3'b101: begin
             D[7:0] = RamData;
-            if (A[13:0] == 14'h1000 || A[13:0] == 14'h1001) begin
+            if (A[13:0] == 14'h37F0 || A[13:0] == 14'h37F1) begin
                 D[7:0] = KeyboardData;
+            end else if (A[13:0] >= 14'h2000 && A[13:0] <= 14'h36FF) begin
+                D[7:0] = VGAData;
             end
         end
         // -------------------------------- Memory write -------------------------------
@@ -190,28 +193,37 @@ ram #( .n(14)) ram_(
     .data_out(RamData)
 );
 
-wire [15:0] ooo;
-keyboard_io keyboard_io_(
-    .clk(clk_cpu),
-    .addr(A[13:0]),
-    .we(RamWE),
-    .data_in(D),
-    .data_out(KeyboardData),
-    .dat(ooo)
-);
-assign led = ooo;
-
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Instantiate Background VGA
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+wire [9:0] vga_x;
+wire [9:0] vga_y;
+wire vga_color;
+reg  [15:0] keycodev=0;
 vga_test vga(
     .clk(CLOCK_100), 
 //    .sw(sw),
 //    .push({btnL, btnU}),
     .hsync(Hsync),
     .vsync(Vsync),
-    .rgb({vgaRed, vgaGreen, vgaBlue})
+    .rgb({vgaRed, vgaGreen, vgaBlue}),
+    .x(vga_x),
+    .y(vga_y),
+    .color(vga_color),
+    .keycodev(keycodev)
+);
+
+vga_io(
+    .addr(A[13:0]),
+    .clk(clk_cpu),
+    .data_in(D),
+    .we(RamWE),
+    .data_out(VGAData),
+    .x(vga_x),
+    .y(vga_y),
+    .color(vga_color),
+    .debug(led[1:0])
 );
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -223,7 +235,6 @@ vga_test vga(
     reg         start=0;
     reg         CLK50MHZ=0;
     wire [31:0] tbuf;
-    reg  [15:0] keycodev=0;
     wire [15:0] keycode;
     wire [ 7:0] tbus;
     reg  [ 2:0] bcount=0;
@@ -310,5 +321,16 @@ vga_test vga(
         .tx     (tx),
         .ready  (tready)
     );
+    
+    wire [15:0] ooo;
+    keyboard_io keyboard_io_(
+        .clk(clk_cpu),
+        .addr(A[13:0]),
+        .we(RamWE),
+        .data_in(keycodev),
+        .data_out(KeyboardData),
+        .dat(ooo)
+    );
+    // assign led = ooo;
 
 endmodule

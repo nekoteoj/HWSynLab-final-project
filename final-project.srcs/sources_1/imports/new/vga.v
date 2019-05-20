@@ -117,10 +117,14 @@ endmodule
 module vga_test
 	(
 		input wire clk,
+		input wire color,
+		input wire [15:0] keycodev,
 //		input wire [11:0] sw,
 //		input wire [1:0] push,
 		output wire hsync, vsync,
-		output wire [11:0] rgb
+		output wire [11:0] rgb,
+		output wire [9:0] x,
+		output wire [9:0] y
 	);
 
 	parameter WIDTH = 640;
@@ -128,8 +132,8 @@ module vga_test
 		
 	// register for Basys 2 8-bit RGB DAC 
 	wire [11:0] rgb_reg;
+	wire [11:0] rgb_bg;
 	reg reset = 0;
-	wire [9:0] x, y;
 
 	// video status output from vga_sync to tell when to route out rgb signal to DAC
 	wire video_on;
@@ -151,7 +155,8 @@ module vga_test
 	wire rgb;
 //	nameReader nR1(xi,yi,rgb_reg);
 //	readBG bg(xi,yi,rgb_reg);
-	readBG bg(x,y,rgb_reg);
+	readBG bg(x,y,rgb_bg);
+	assign rgb_reg = (keycodev == 16'b0) ? rgb_bg : (color == 0) ? 12'b000000000000 : 12'b111111111111;
 
 //	always @(posedge p_tick) begin
 //		if (!state) begin

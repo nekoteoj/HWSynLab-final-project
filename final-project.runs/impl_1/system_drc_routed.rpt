@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date         : Mon May 20 14:06:58 2019
+| Date         : Mon May 20 20:13:01 2019
 | Host         : pisit-neon running 64-bit KDE neon Unstable Edition
 | Command      : report_drc -file system_drc_routed.rpt -pb system_drc_routed.pb -rpx system_drc_routed.rpx
 | Design       : system
@@ -53,37 +53,37 @@ Related violations: <none>
 
 LUTLP-2#3 Warning
 Combinatorial Loop Allowed  
-6 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. This loop has been identified in the constraints as being known and understood by use of the ALLOW_COMBINATORIAL_LOOPS property on a net in the loop. The cells in the loop are: z80_/memory_ifc_/D_inferred_i_2, z80_/memory_ifc_/D_inferred_i_11, z80_/memory_ifc_/D_inferred_i_20, z80_/memory_ifc_/dout[6]_i_2, z80_/memory_ifc_/dout[6]_i_3, z80_/memory_ifc_/dout[6]_i_5.
+5 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. This loop has been identified in the constraints as being known and understood by use of the ALLOW_COMBINATORIAL_LOOPS property on a net in the loop. The cells in the loop are: z80_/memory_ifc_/D_inferred_i_2, z80_/memory_ifc_/D_inferred_i_11, z80_/memory_ifc_/dout[6]_i_2, z80_/memory_ifc_/dout[6]_i_3, z80_/memory_ifc_/dout[6]_i_5.
 Related violations: <none>
 
 LUTLP-2#4 Warning
 Combinatorial Loop Allowed  
-6 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. This loop has been identified in the constraints as being known and understood by use of the ALLOW_COMBINATORIAL_LOOPS property on a net in the loop. The cells in the loop are: z80_/memory_ifc_/D_inferred_i_3, z80_/memory_ifc_/D_inferred_i_12, z80_/memory_ifc_/D_inferred_i_21, z80_/memory_ifc_/dout[5]_i_2, z80_/memory_ifc_/dout[5]_i_3, z80_/memory_ifc_/dout[5]_i_5.
+5 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. This loop has been identified in the constraints as being known and understood by use of the ALLOW_COMBINATORIAL_LOOPS property on a net in the loop. The cells in the loop are: z80_/memory_ifc_/D_inferred_i_3, z80_/memory_ifc_/D_inferred_i_12, z80_/memory_ifc_/dout[5]_i_2, z80_/memory_ifc_/dout[5]_i_3, z80_/memory_ifc_/dout[5]_i_5.
 Related violations: <none>
 
 LUTLP-2#5 Warning
 Combinatorial Loop Allowed  
-6 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. This loop has been identified in the constraints as being known and understood by use of the ALLOW_COMBINATORIAL_LOOPS property on a net in the loop. The cells in the loop are: z80_/memory_ifc_/D_inferred_i_4, z80_/memory_ifc_/D_inferred_i_13, z80_/memory_ifc_/D_inferred_i_22, z80_/memory_ifc_/dout[4]_i_2, z80_/memory_ifc_/dout[4]_i_3, z80_/memory_ifc_/dout[4]_i_5.
+5 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. This loop has been identified in the constraints as being known and understood by use of the ALLOW_COMBINATORIAL_LOOPS property on a net in the loop. The cells in the loop are: z80_/memory_ifc_/D_inferred_i_4, z80_/memory_ifc_/D_inferred_i_13, z80_/memory_ifc_/dout[4]_i_2, z80_/memory_ifc_/dout[4]_i_3, z80_/memory_ifc_/dout[4]_i_5.
 Related violations: <none>
 
 LUTLP-2#6 Warning
 Combinatorial Loop Allowed  
-6 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. This loop has been identified in the constraints as being known and understood by use of the ALLOW_COMBINATORIAL_LOOPS property on a net in the loop. The cells in the loop are: z80_/memory_ifc_/D_inferred_i_5, z80_/memory_ifc_/D_inferred_i_14, z80_/memory_ifc_/D_inferred_i_23, z80_/memory_ifc_/dout[3]_i_2, z80_/memory_ifc_/dout[3]_i_3, z80_/memory_ifc_/dout[3]_i_5.
+5 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. This loop has been identified in the constraints as being known and understood by use of the ALLOW_COMBINATORIAL_LOOPS property on a net in the loop. The cells in the loop are: z80_/memory_ifc_/D_inferred_i_5, z80_/memory_ifc_/D_inferred_i_14, z80_/memory_ifc_/dout[3]_i_2, z80_/memory_ifc_/dout[3]_i_3, z80_/memory_ifc_/dout[3]_i_5.
 Related violations: <none>
 
 LUTLP-2#7 Warning
 Combinatorial Loop Allowed  
-6 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. This loop has been identified in the constraints as being known and understood by use of the ALLOW_COMBINATORIAL_LOOPS property on a net in the loop. The cells in the loop are: z80_/memory_ifc_/D_inferred_i_6, z80_/memory_ifc_/D_inferred_i_15, z80_/memory_ifc_/D_inferred_i_24, z80_/memory_ifc_/dout[2]_i_2, z80_/memory_ifc_/dout[2]_i_3, z80_/memory_ifc_/dout[2]_i_5.
+5 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. This loop has been identified in the constraints as being known and understood by use of the ALLOW_COMBINATORIAL_LOOPS property on a net in the loop. The cells in the loop are: z80_/memory_ifc_/D_inferred_i_6, z80_/memory_ifc_/D_inferred_i_15, z80_/memory_ifc_/dout[2]_i_2, z80_/memory_ifc_/dout[2]_i_3, z80_/memory_ifc_/dout[2]_i_5.
 Related violations: <none>
 
 LUTLP-2#8 Warning
 Combinatorial Loop Allowed  
-6 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. This loop has been identified in the constraints as being known and understood by use of the ALLOW_COMBINATORIAL_LOOPS property on a net in the loop. The cells in the loop are: z80_/memory_ifc_/D_inferred_i_7, z80_/memory_ifc_/D_inferred_i_16, z80_/memory_ifc_/D_inferred_i_25, z80_/memory_ifc_/dout[1]_i_2, z80_/memory_ifc_/dout[1]_i_3, z80_/memory_ifc_/dout[1]_i_5.
+5 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. This loop has been identified in the constraints as being known and understood by use of the ALLOW_COMBINATORIAL_LOOPS property on a net in the loop. The cells in the loop are: z80_/memory_ifc_/D_inferred_i_7, z80_/memory_ifc_/D_inferred_i_16, z80_/memory_ifc_/dout[1]_i_2, z80_/memory_ifc_/dout[1]_i_3, z80_/memory_ifc_/dout[1]_i_5.
 Related violations: <none>
 
 LUTLP-2#9 Warning
 Combinatorial Loop Allowed  
-6 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. This loop has been identified in the constraints as being known and understood by use of the ALLOW_COMBINATORIAL_LOOPS property on a net in the loop. The cells in the loop are: z80_/memory_ifc_/D_inferred_i_8, z80_/memory_ifc_/D_inferred_i_17, z80_/memory_ifc_/D_inferred_i_26, z80_/memory_ifc_/dout[0]_i_2, z80_/memory_ifc_/dout[0]_i_3, z80_/memory_ifc_/dout[0]_i_5.
+5 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. This loop has been identified in the constraints as being known and understood by use of the ALLOW_COMBINATORIAL_LOOPS property on a net in the loop. The cells in the loop are: z80_/memory_ifc_/D_inferred_i_8, z80_/memory_ifc_/D_inferred_i_17, z80_/memory_ifc_/dout[0]_i_2, z80_/memory_ifc_/dout[0]_i_3, z80_/memory_ifc_/dout[0]_i_5.
 Related violations: <none>
 
 PLCK-12#1 Warning

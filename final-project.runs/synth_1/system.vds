@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Mon May 20 13:59:39 2019
-# Process ID: 30842
+# Start of session at: Mon May 20 20:06:09 2019
+# Process ID: 30442
 # Current directory: /home/pisit/Documents/pong-game/final-project/final-project.runs/synth_1
 # Command line: vivado -log system.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system.tcl
 # Log file: /home/pisit/Documents/pong-game/final-project/final-project.runs/synth_1/system.vds
@@ -16,19 +16,18 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 30859 
-WARNING: [Synth 8-2611] redeclaration of ansi port rgb is not allowed [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/new/vga.v:151]
-WARNING: [Synth 8-1082] rgb was previously declared with a range [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/new/vga.v:151]
-WARNING: [Synth 8-976] rgb has already been declared [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/new/vga.v:151]
-WARNING: [Synth 8-2654] second declaration of rgb ignored [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/new/vga.v:151]
-INFO: [Synth 8-994] rgb is declared here [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/new/vga.v:123]
+INFO: Helper process launched with PID 30469 
+WARNING: [Synth 8-2611] redeclaration of ansi port rgb is not allowed [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/new/vga.v:155]
+WARNING: [Synth 8-1082] rgb was previously declared with a range [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/new/vga.v:155]
+WARNING: [Synth 8-976] rgb has already been declared [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/new/vga.v:155]
+WARNING: [Synth 8-2654] second declaration of rgb ignored [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/new/vga.v:155]
+INFO: [Synth 8-994] rgb is declared here [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/new/vga.v:125]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1398.590 ; gain = 16.355 ; free physical = 1795 ; free virtual = 10340
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1399.055 ; gain = 69.355 ; free physical = 1551 ; free virtual = 9800
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'system' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:44]
-INFO: [Synth 8-6157] synthesizing module 'clock_divider' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/clock_divider.v:23]
-	Parameter PERIOD bound to: 200 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (1#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/clock_divider.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clock_generator' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/clock_generator.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clock_generator' (1#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/clock_generator.v:23]
 INFO: [Synth 8-6157] synthesizing module 'z80_top_direct_n' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/z80_top_direct_n.v:19]
 INFO: [Synth 8-6157] synthesizing module 'clk_delay' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/clk_delay.v:32]
 INFO: [Synth 8-6155] done synthesizing module 'clk_delay' (2#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/clk_delay.v:32]
@@ -111,9 +110,6 @@ INFO: [Synth 8-6157] synthesizing module 'ram' [/home/pisit/Documents/pong-game/
 	Parameter n bound to: 14 - type: integer 
 INFO: [Synth 8-3876] $readmem data file 'ram.mif' is read successfully [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/ram.v:32]
 INFO: [Synth 8-6155] done synthesizing module 'ram' (41#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/ram.v:22]
-INFO: [Synth 8-6157] synthesizing module 'keyboard_io' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/keyboard_io.v:22]
-INFO: [Synth 8-6155] done synthesizing module 'keyboard_io' (42#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/keyboard_io.v:22]
-WARNING: [Synth 8-689] width (16) of port connection 'dat' does not match port width (8) of module 'keyboard_io' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:200]
 INFO: [Synth 8-6157] synthesizing module 'vga_test' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/new/vga.v:117]
 	Parameter WIDTH bound to: 640 - type: integer 
 	Parameter HEIGHT bound to: 480 - type: integer 
@@ -132,13 +128,15 @@ INFO: [Synth 8-6157] synthesizing module 'vga_sync' [/home/pisit/Documents/pong-
 	Parameter V_MAX bound to: 524 - type: integer 
 	Parameter START_V_RETRACE bound to: 513 - type: integer 
 	Parameter END_V_RETRACE bound to: 514 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'vga_sync' (43#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/new/vga.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'vga_sync' (42#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/new/vga.v:21]
 INFO: [Synth 8-6157] synthesizing module 'readBG' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/new/readBG.v:23]
 INFO: [Synth 8-3876] $readmem data file 'ping.list' is read successfully [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/new/readBG.v:40]
 WARNING: [Synth 8-567] referenced signal 'newY' should be on the sensitivity list [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/new/readBG.v:43]
 WARNING: [Synth 8-567] referenced signal 'newX' should be on the sensitivity list [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/new/readBG.v:43]
-INFO: [Synth 8-6155] done synthesizing module 'readBG' (44#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/new/readBG.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'vga_test' (45#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/new/vga.v:117]
+INFO: [Synth 8-6155] done synthesizing module 'readBG' (43#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/new/readBG.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'vga_test' (44#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/new/vga.v:117]
+INFO: [Synth 8-6157] synthesizing module 'vga_io' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/vga_io.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'vga_io' (45#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/vga_io.v:22]
 INFO: [Synth 8-6157] synthesizing module 'PS2Receiver' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/hdl/PS2Receiver.v:23]
 INFO: [Synth 8-6157] synthesizing module 'debouncer' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/hdl/debouncer.v:23]
 	Parameter COUNT_MAX bound to: 19 - type: integer 
@@ -147,37 +145,51 @@ INFO: [Synth 8-6155] done synthesizing module 'debouncer' (46#1) [/home/pisit/Do
 INFO: [Synth 8-155] case statement is not full and has no default [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/hdl/PS2Receiver.v:55]
 INFO: [Synth 8-6155] done synthesizing module 'PS2Receiver' (47#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/hdl/PS2Receiver.v:23]
 INFO: [Synth 8-6157] synthesizing module 'seven_seg_display' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/seven_seg_display.v:23]
-INFO: [Synth 8-6157] synthesizing module 'clock_divider__parameterized0' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/clock_divider.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/clock_divider.v:23]
 	Parameter PERIOD bound to: 41 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'clock_divider__parameterized0' (47#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/clock_divider.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (48#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/clock_divider.v:23]
 INFO: [Synth 8-6157] synthesizing module 'hex_to_seven_seg' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/hex_to_seven_seg.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'hex_to_seven_seg' (48#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/hex_to_seven_seg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'hex_to_seven_seg' (49#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/hex_to_seven_seg.v:23]
 WARNING: [Synth 8-567] referenced signal 'num3' should be on the sensitivity list [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/seven_seg_display.v:62]
 WARNING: [Synth 8-567] referenced signal 'num2' should be on the sensitivity list [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/seven_seg_display.v:62]
 WARNING: [Synth 8-567] referenced signal 'num1' should be on the sensitivity list [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/seven_seg_display.v:62]
 WARNING: [Synth 8-567] referenced signal 'num0' should be on the sensitivity list [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/seven_seg_display.v:62]
-INFO: [Synth 8-6155] done synthesizing module 'seven_seg_display' (49#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/seven_seg_display.v:23]
-WARNING: [Synth 8-567] referenced signal 'keycodev' should be on the sensitivity list [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:269]
+INFO: [Synth 8-6155] done synthesizing module 'seven_seg_display' (50#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/seven_seg_display.v:23]
+WARNING: [Synth 8-567] referenced signal 'keycodev' should be on the sensitivity list [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:280]
 INFO: [Synth 8-6157] synthesizing module 'bin2ascii' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/hdl/bin2ascii.v:23]
 	Parameter NBYTES bound to: 2 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'bin2ascii' (50#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/hdl/bin2ascii.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bin2ascii' (51#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/hdl/bin2ascii.v:23]
 INFO: [Synth 8-6157] synthesizing module 'uart_buf_con' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/hdl/uart_buf_con.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'uart_buf_con' (51#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/hdl/uart_buf_con.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'uart_buf_con' (52#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/hdl/uart_buf_con.v:23]
 INFO: [Synth 8-6157] synthesizing module 'uart_tx' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/hdl/uart_tx.v:23]
 	Parameter CD_MAX bound to: 10416 - type: integer 
 	Parameter CD_WIDTH bound to: 16 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (52#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/hdl/uart_tx.v:23]
-WARNING: [Synth 8-6014] Unused sequential element outcode_reg was removed.  [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:247]
-WARNING: [Synth 8-3848] Net uart_busy in module/entity system does not have driver. [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:125]
-INFO: [Synth 8-6155] done synthesizing module 'system' (53#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:44]
-WARNING: [Synth 8-3917] design system has port led[15] driven by constant 0
-WARNING: [Synth 8-3917] design system has port led[14] driven by constant 0
-WARNING: [Synth 8-3917] design system has port led[13] driven by constant 0
-WARNING: [Synth 8-3917] design system has port led[12] driven by constant 0
-WARNING: [Synth 8-3917] design system has port led[11] driven by constant 0
-WARNING: [Synth 8-3917] design system has port led[10] driven by constant 0
-WARNING: [Synth 8-3917] design system has port led[9] driven by constant 0
-WARNING: [Synth 8-3917] design system has port led[8] driven by constant 0
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (53#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/hdl/uart_tx.v:23]
+INFO: [Synth 8-6157] synthesizing module 'keyboard_io' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/keyboard_io.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'keyboard_io' (54#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/keyboard_io.v:22]
+WARNING: [Synth 8-689] width (16) of port connection 'dat' does not match port width (8) of module 'keyboard_io' [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:332]
+WARNING: [Synth 8-6014] Unused sequential element outcode_reg was removed.  [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:258]
+WARNING: [Synth 8-3848] Net uart_busy in module/entity system does not have driver. [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:126]
+INFO: [Synth 8-6155] done synthesizing module 'system' (55#1) [/home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v:44]
+WARNING: [Synth 8-3331] design keyboard_io has unconnected port we
+WARNING: [Synth 8-3331] design vga_io has unconnected port data_in[7]
+WARNING: [Synth 8-3331] design vga_io has unconnected port data_in[6]
+WARNING: [Synth 8-3331] design vga_io has unconnected port data_in[5]
+WARNING: [Synth 8-3331] design vga_io has unconnected port data_in[4]
+WARNING: [Synth 8-3331] design vga_io has unconnected port data_in[3]
+WARNING: [Synth 8-3331] design vga_io has unconnected port data_in[2]
+WARNING: [Synth 8-3331] design vga_io has unconnected port data_in[1]
+WARNING: [Synth 8-3331] design vga_io has unconnected port data_in[0]
+WARNING: [Synth 8-3331] design vga_io has unconnected port y[9]
+WARNING: [Synth 8-3331] design vga_io has unconnected port y[8]
+WARNING: [Synth 8-3331] design vga_io has unconnected port y[7]
+WARNING: [Synth 8-3331] design vga_io has unconnected port y[6]
+WARNING: [Synth 8-3331] design vga_io has unconnected port y[5]
+WARNING: [Synth 8-3331] design vga_io has unconnected port y[4]
+WARNING: [Synth 8-3331] design vga_io has unconnected port y[3]
+WARNING: [Synth 8-3331] design vga_io has unconnected port y[2]
+WARNING: [Synth 8-3331] design vga_io has unconnected port y[1]
+WARNING: [Synth 8-3331] design vga_io has unconnected port y[0]
 WARNING: [Synth 8-3331] design alu_prep_daa has unconnected port low[0]
 WARNING: [Synth 8-3331] design execute has unconnected port pla[98]
 WARNING: [Synth 8-3331] design execute has unconnected port pla[94]
@@ -198,8 +210,22 @@ WARNING: [Synth 8-3331] design execute has unconnected port pla[19]
 WARNING: [Synth 8-3331] design execute has unconnected port pla[18]
 WARNING: [Synth 8-3331] design execute has unconnected port pla[14]
 WARNING: [Synth 8-3331] design execute has unconnected port pla[4]
+WARNING: [Synth 8-3331] design system has unconnected port led[15]
+WARNING: [Synth 8-3331] design system has unconnected port led[14]
+WARNING: [Synth 8-3331] design system has unconnected port led[13]
+WARNING: [Synth 8-3331] design system has unconnected port led[12]
+WARNING: [Synth 8-3331] design system has unconnected port led[11]
+WARNING: [Synth 8-3331] design system has unconnected port led[10]
+WARNING: [Synth 8-3331] design system has unconnected port led[9]
+WARNING: [Synth 8-3331] design system has unconnected port led[8]
+WARNING: [Synth 8-3331] design system has unconnected port led[7]
+WARNING: [Synth 8-3331] design system has unconnected port led[6]
+WARNING: [Synth 8-3331] design system has unconnected port led[5]
+WARNING: [Synth 8-3331] design system has unconnected port led[4]
+WARNING: [Synth 8-3331] design system has unconnected port led[3]
+WARNING: [Synth 8-3331] design system has unconnected port led[2]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1506.840 ; gain = 124.605 ; free physical = 1747 ; free virtual = 10293
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1507.180 ; gain = 177.480 ; free physical = 1504 ; free virtual = 9754
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -212,10 +238,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1506.840 ; gain = 124.605 ; free physical = 1770 ; free virtual = 10316
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1507.180 ; gain = 177.480 ; free physical = 1525 ; free virtual = 9776
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1506.840 ; gain = 124.605 ; free physical = 1770 ; free virtual = 10316
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1507.180 ; gain = 177.480 ; free physical = 1525 ; free virtual = 9776
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -229,24 +255,24 @@ Resolution: If [get_<value>] was used to populate the object, check to make sure
 Finished Parsing XDC File [/home/pisit/Documents/pong-game/final-project/final-project.srcs/constrs_1/imports/VivadoProjects/Basys-3-Master.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/pisit/Documents/pong-game/final-project/final-project.srcs/constrs_1/imports/VivadoProjects/Basys-3-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/system_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1818.207 ; gain = 0.000 ; free physical = 1499 ; free virtual = 10044
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1819.547 ; gain = 0.000 ; free physical = 1254 ; free virtual = 9505
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1818.207 ; gain = 0.000 ; free physical = 1499 ; free virtual = 10044
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1819.547 ; gain = 0.000 ; free physical = 1254 ; free virtual = 9506
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1818.207 ; gain = 0.000 ; free physical = 1498 ; free virtual = 10044
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.08 . Memory (MB): peak = 1818.207 ; gain = 0.000 ; free physical = 1496 ; free virtual = 10043
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1819.547 ; gain = 0.000 ; free physical = 1253 ; free virtual = 9505
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.09 . Memory (MB): peak = 1819.547 ; gain = 0.000 ; free physical = 1251 ; free virtual = 9504
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1818.207 ; gain = 435.973 ; free physical = 1595 ; free virtual = 10143
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1819.547 ; gain = 489.848 ; free physical = 1349 ; free virtual = 9603
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1818.207 ; gain = 435.973 ; free physical = 1595 ; free virtual = 10143
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1819.547 ; gain = 489.848 ; free physical = 1349 ; free virtual = 9603
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -287,9 +313,11 @@ WARNING: set_property ALLOW_COMBINATORIAL_LOOPS could not find object (constrain
 WARNING: set_property ALLOW_COMBINATORIAL_LOOPS could not find object (constraint file  /home/pisit/Documents/pong-game/final-project/final-project.srcs/constrs_1/imports/VivadoProjects/Basys-3-Master.xdc, line 300).
 WARNING: set_property ALLOW_COMBINATORIAL_LOOPS could not find object (constraint file  /home/pisit/Documents/pong-game/final-project/final-project.srcs/constrs_1/imports/VivadoProjects/Basys-3-Master.xdc, line 300).
 WARNING: set_property ALLOW_COMBINATORIAL_LOOPS could not find object (constraint file  /home/pisit/Documents/pong-game/final-project/final-project.srcs/constrs_1/imports/VivadoProjects/Basys-3-Master.xdc, line 300).
+WARNING: set_property ALLOW_COMBINATORIAL_LOOPS could not find object (constraint file  /home/pisit/Documents/pong-game/final-project/final-project.srcs/constrs_1/imports/VivadoProjects/Basys-3-Master.xdc, line 300).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:58 ; elapsed = 00:03:01 . Memory (MB): peak = 1818.207 ; gain = 435.973 ; free physical = 1584 ; free virtual = 10134
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:33 ; elapsed = 00:02:36 . Memory (MB): peak = 1819.547 ; gain = 489.848 ; free physical = 1343 ; free virtual = 9597
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "cpu_clk" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "pla0" won't be mapped to RAM because it is too sparse
@@ -398,7 +426,7 @@ INFO: [Synth 8-5544] ROM "CpuData2" won't be mapped to Block RAM because address
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'seven_seg_display'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:03:09 ; elapsed = 00:03:13 . Memory (MB): peak = 1818.207 ; gain = 435.973 ; free physical = 1576 ; free virtual = 10128
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:41 ; elapsed = 00:02:45 . Memory (MB): peak = 1819.547 ; gain = 489.848 ; free physical = 1335 ; free virtual = 9591
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -411,14 +439,15 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     27 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     27 Bit       Adders := 1     
 	   2 Input     16 Bit       Adders := 1     
 	   2 Input     10 Bit       Adders := 2     
 	   2 Input      9 Bit       Adders := 1     
 	   2 Input      7 Bit       Adders := 4     
 	   2 Input      5 Bit       Adders := 2     
 	   2 Input      4 Bit       Adders := 2     
-	   2 Input      3 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 3     
 	   2 Input      2 Bit       Adders := 1     
 +---XORs : 
 	   2 Input      1 Bit         XORs := 41    
@@ -431,25 +460,25 @@ Detailed RTL Component Info :
 	                8 Bit    Registers := 37    
 	                5 Bit    Registers := 2     
 	                4 Bit    Registers := 7     
-	                3 Bit    Registers := 1     
-	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 89    
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 90    
 +---RAMs : 
 	             128K Bit         RAMs := 1     
 +---Muxes : 
 	 241 Input    320 Bit        Muxes := 1     
 	   2 Input     16 Bit        Muxes := 1     
-	   2 Input     12 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 3     
 	   2 Input     11 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 4     
 	   6 Input      8 Bit        Muxes := 2     
 	   3 Input      8 Bit        Muxes := 1     
 	   2 Input      7 Bit        Muxes := 4     
 	   2 Input      4 Bit        Muxes := 2     
 	   4 Input      4 Bit        Muxes := 2     
-	   2 Input      3 Bit        Muxes := 4     
+	   2 Input      3 Bit        Muxes := 5     
 	   4 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 107   
+	   2 Input      1 Bit        Muxes := 105   
 	   3 Input      1 Bit        Muxes := 1     
 	  12 Input      1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
@@ -465,17 +494,21 @@ Detailed RTL Component Info :
 	               16 Bit    Registers := 1     
 	                1 Bit    Registers := 2     
 +---Muxes : 
-	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 3     
 	   6 Input      8 Bit        Muxes := 2     
 	   3 Input      8 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 2     
 	   2 Input      1 Bit        Muxes := 1     
-Module clock_divider 
+Module clock_generator 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     27 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
 +---Registers : 
+	                3 Bit    Registers := 1     
 	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
 Module clk_delay 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -574,13 +607,6 @@ Detailed RTL Component Info :
 	                8 Bit    Registers := 1     
 +---RAMs : 
 	             128K Bit         RAMs := 1     
-Module keyboard_io 
-Detailed RTL Component Info : 
-+---Registers : 
-	                8 Bit    Registers := 4     
-+---Muxes : 
-	   2 Input      8 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 5     
 Module vga_sync 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -601,7 +627,14 @@ Detailed RTL Component Info :
 Module vga_test 
 Detailed RTL Component Info : 
 +---Muxes : 
-	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 2     
+Module vga_io 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
 Module debouncer 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -624,7 +657,7 @@ Detailed RTL Component Info :
 	   2 Input      4 Bit        Muxes := 1     
 	   3 Input      1 Bit        Muxes := 1     
 	  12 Input      1 Bit        Muxes := 2     
-Module clock_divider__parameterized0 
+Module clock_divider 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     27 Bit       Adders := 1     
@@ -667,6 +700,13 @@ Detailed RTL Component Info :
 	   2 Input     11 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 5     
+Module keyboard_io 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -683,26 +723,42 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-5544] ROM "tx_con/running" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5546] ROM "z80_/pla_decode_/pla0" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "z80_/pla_decode_/pla0" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "z80_/pla_decode_/pla0" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "z80_/pla_decode_/pla0" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "z80_/pla_decode_/pla0" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "z80_/pla_decode_/pla0" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "z80_/pla_decode_/pla0" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "z80_/pla_decode_/pla0" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "z80_/pla_decode_/pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla_decode_/pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla_decode_/pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla_decode_/pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla_decode_/pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla_decode_/pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla_decode_/pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla_decode_/pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla_decode_/pla0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pla_decode_/pla0" won't be mapped to RAM because it is too sparse
 INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-WARNING: [Synth 8-3917] design system has port dp driven by constant 1
-WARNING: [Synth 8-3917] design system has port led[15] driven by constant 0
-WARNING: [Synth 8-3917] design system has port led[14] driven by constant 0
-WARNING: [Synth 8-3917] design system has port led[13] driven by constant 0
-WARNING: [Synth 8-3917] design system has port led[12] driven by constant 0
-WARNING: [Synth 8-3917] design system has port led[11] driven by constant 0
-WARNING: [Synth 8-3917] design system has port led[10] driven by constant 0
-WARNING: [Synth 8-3917] design system has port led[9] driven by constant 0
-WARNING: [Synth 8-3917] design system has port led[8] driven by constant 0
+INFO: [Synth 8-5544] ROM "running" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clock_gen/cpu_clk" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+WARNING: [Synth 8-3331] design vga_io has unconnected port data_in[7]
+WARNING: [Synth 8-3331] design vga_io has unconnected port data_in[6]
+WARNING: [Synth 8-3331] design vga_io has unconnected port data_in[5]
+WARNING: [Synth 8-3331] design vga_io has unconnected port data_in[4]
+WARNING: [Synth 8-3331] design vga_io has unconnected port data_in[3]
+WARNING: [Synth 8-3331] design vga_io has unconnected port data_in[2]
+WARNING: [Synth 8-3331] design vga_io has unconnected port data_in[1]
+WARNING: [Synth 8-3331] design vga_io has unconnected port data_in[0]
+WARNING: [Synth 8-3331] design vga_io has unconnected port x[9]
+WARNING: [Synth 8-3331] design vga_io has unconnected port x[8]
+WARNING: [Synth 8-3331] design vga_io has unconnected port x[7]
+WARNING: [Synth 8-3331] design vga_io has unconnected port x[2]
+WARNING: [Synth 8-3331] design vga_io has unconnected port x[1]
+WARNING: [Synth 8-3331] design vga_io has unconnected port x[0]
+WARNING: [Synth 8-3331] design vga_io has unconnected port y[9]
+WARNING: [Synth 8-3331] design vga_io has unconnected port y[8]
+WARNING: [Synth 8-3331] design vga_io has unconnected port y[7]
+WARNING: [Synth 8-3331] design vga_io has unconnected port y[6]
+WARNING: [Synth 8-3331] design vga_io has unconnected port y[5]
+WARNING: [Synth 8-3331] design vga_io has unconnected port y[4]
+WARNING: [Synth 8-3331] design vga_io has unconnected port y[3]
+WARNING: [Synth 8-3331] design vga_io has unconnected port y[2]
+WARNING: [Synth 8-3331] design vga_io has unconnected port y[1]
+WARNING: [Synth 8-3331] design vga_io has unconnected port y[0]
 WARNING: [Synth 8-3331] design readBG has unconnected port y[9]
 WARNING: [Synth 8-3331] design readBG has unconnected port y[0]
 WARNING: [Synth 8-3331] design execute has unconnected port pla[98]
@@ -724,6 +780,9 @@ WARNING: [Synth 8-3331] design execute has unconnected port pla[19]
 WARNING: [Synth 8-3331] design execute has unconnected port pla[18]
 WARNING: [Synth 8-3331] design execute has unconnected port pla[14]
 WARNING: [Synth 8-3331] design execute has unconnected port pla[4]
+WARNING: [Synth 8-3331] design system has unconnected port led[15]
+WARNING: [Synth 8-3331] design system has unconnected port led[14]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (\get_tx/shift_reg[10] )
 INFO: [Synth 8-3886] merging instance 'tx_con/pbuf_reg[31]' (FDE) to 'tx_con/pbuf_reg[7]'
 INFO: [Synth 8-3886] merging instance 'tx_con/pbuf_reg[23]' (FDE) to 'tx_con/pbuf_reg[7]'
@@ -746,7 +805,7 @@ INFO: [Synth 8-3886] merging instance 'uut/dataprev_reg[7]' (FDE) to 'uut/keycod
 INFO: [Synth 8-3886] merging instance 'get_tx/shift_reg[10]' (FDE) to 'get_tx/shift_reg[9]'
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (\get_tx/shift_reg[9] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:48 ; elapsed = 00:04:53 . Memory (MB): peak = 1958.207 ; gain = 575.973 ; free physical = 1542 ; free virtual = 10101
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:18 ; elapsed = 00:04:24 . Memory (MB): peak = 1958.547 ; gain = 628.848 ; free physical = 1301 ; free virtual = 9566
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -763,10 +822,10 @@ Note: The table above is a preliminary report that shows the Block RAMs at the c
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6837] The timing for the instance i_460/ram_/reg_array_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-6837] The timing for the instance i_460/ram_/reg_array_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-6837] The timing for the instance i_460/ram_/reg_array_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-6837] The timing for the instance i_460/ram_/reg_array_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_570/ram_/reg_array_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_570/ram_/reg_array_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_570/ram_/reg_array_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_570/ram_/reg_array_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -777,19 +836,11 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:05:48 ; elapsed = 00:05:54 . Memory (MB): peak = 1958.207 ; gain = 575.973 ; free physical = 1430 ; free virtual = 9990
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:05:18 ; elapsed = 00:05:24 . Memory (MB): peak = 1958.547 ; gain = 628.848 ; free physical = 1184 ; free virtual = 9449
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
-Inferred a: "set_disable_timing -from a -to z i_10(tricell)"
-Inferred a: "set_disable_timing -from a -to z i_9(tricell)"
-Inferred a: "set_disable_timing -from a -to z i_8(tricell)"
-Inferred a: "set_disable_timing -from a -to z i_7(tricell)"
-Inferred a: "set_disable_timing -from a -to z i_6(tricell)"
-Inferred a: "set_disable_timing -from a -to z i_5(tricell)"
-Inferred a: "set_disable_timing -from a -to z i_4(tricell)"
-Inferred a: "set_disable_timing -from a -to z i_3(tricell)"
 Inferred a: "set_disable_timing -from a -to z i_415(tricell)"
 Inferred a: "set_disable_timing -from a -to z sw2_i_399(tricell)"
 Inferred a: "set_disable_timing -from a -to z i_409(tricell)"
@@ -806,9 +857,17 @@ Inferred a: "set_disable_timing -from a -to z i_411(tricell)"
 Inferred a: "set_disable_timing -from a -to z sw2_i_392(tricell)"
 Inferred a: "set_disable_timing -from a -to z i_414(tricell)"
 Inferred a: "set_disable_timing -from a -to z sw2_i_398(tricell)"
-      : i_483/db[4]
+      : i_484/db[4]
+Inferred a: "set_disable_timing -from a -to z i_10(tricell)"
+Inferred a: "set_disable_timing -from a -to z i_9(tricell)"
+Inferred a: "set_disable_timing -from a -to z i_8(tricell)"
+Inferred a: "set_disable_timing -from a -to z i_7(tricell)"
+Inferred a: "set_disable_timing -from a -to z i_6(tricell)"
+Inferred a: "set_disable_timing -from a -to z i_5(tricell)"
+Inferred a: "set_disable_timing -from a -to z i_4(tricell)"
+Inferred a: "set_disable_timing -from a -to z i_3(tricell)"
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:05:50 ; elapsed = 00:05:56 . Memory (MB): peak = 1958.207 ; gain = 575.973 ; free physical = 1423 ; free virtual = 9983
+Finished Timing Optimization : Time (s): cpu = 00:05:21 ; elapsed = 00:05:27 . Memory (MB): peak = 1958.547 ; gain = 628.848 ; free physical = 1175 ; free virtual = 9440
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -838,7 +897,7 @@ INFO: [Synth 8-6837] The timing for the instance ram_/reg_array_reg_1 (implement
 INFO: [Synth 8-6837] The timing for the instance ram_/reg_array_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-6837] The timing for the instance ram_/reg_array_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:05:53 ; elapsed = 00:05:59 . Memory (MB): peak = 1958.207 ; gain = 575.973 ; free physical = 1420 ; free virtual = 9980
+Finished Technology Mapping : Time (s): cpu = 00:05:24 ; elapsed = 00:05:30 . Memory (MB): peak = 1958.547 ; gain = 628.848 ; free physical = 1171 ; free virtual = 9436
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -862,7 +921,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:05:54 ; elapsed = 00:06:00 . Memory (MB): peak = 1958.207 ; gain = 575.973 ; free physical = 1420 ; free virtual = 9980
+Finished IO Insertion : Time (s): cpu = 00:05:25 ; elapsed = 00:05:31 . Memory (MB): peak = 1958.547 ; gain = 628.848 ; free physical = 1171 ; free virtual = 9436
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -875,7 +934,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:05:54 ; elapsed = 00:06:00 . Memory (MB): peak = 1958.207 ; gain = 575.973 ; free physical = 1420 ; free virtual = 9980
+Finished Renaming Generated Instances : Time (s): cpu = 00:05:25 ; elapsed = 00:05:31 . Memory (MB): peak = 1958.547 ; gain = 628.848 ; free physical = 1171 ; free virtual = 9436
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1378,25 +1437,25 @@ Inferred a: "set_disable_timing -from I0 -to O \latch[6]_i_1__0 "
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:05:54 ; elapsed = 00:06:00 . Memory (MB): peak = 1958.207 ; gain = 575.973 ; free physical = 1420 ; free virtual = 9980
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:05:25 ; elapsed = 00:05:31 . Memory (MB): peak = 1958.547 ; gain = 628.848 ; free physical = 1171 ; free virtual = 9436
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:05:54 ; elapsed = 00:06:00 . Memory (MB): peak = 1958.207 ; gain = 575.973 ; free physical = 1420 ; free virtual = 9980
+Finished Renaming Generated Ports : Time (s): cpu = 00:05:25 ; elapsed = 00:05:31 . Memory (MB): peak = 1958.547 ; gain = 628.848 ; free physical = 1171 ; free virtual = 9436
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:05:55 ; elapsed = 00:06:01 . Memory (MB): peak = 1958.207 ; gain = 575.973 ; free physical = 1420 ; free virtual = 9980
+Finished Handling Custom Attributes : Time (s): cpu = 00:05:25 ; elapsed = 00:05:32 . Memory (MB): peak = 1958.547 ; gain = 628.848 ; free physical = 1171 ; free virtual = 9436
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:05:55 ; elapsed = 00:06:01 . Memory (MB): peak = 1958.207 ; gain = 575.973 ; free physical = 1420 ; free virtual = 9980
+Finished Renaming Generated Nets : Time (s): cpu = 00:05:25 ; elapsed = 00:05:32 . Memory (MB): peak = 1958.547 ; gain = 628.848 ; free physical = 1171 ; free virtual = 9436
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1413,14 +1472,14 @@ Report Cell Usage:
 |      |Cell       |Count |
 +------+-----------+------+
 |1     |BUFG       |     4|
-|2     |CARRY4     |    34|
-|3     |LUT1       |    13|
-|4     |LUT2       |   329|
-|5     |LUT3       |   310|
-|6     |LUT4       |   349|
-|7     |LUT5       |   470|
-|8     |LUT6       |  1970|
-|9     |MUXF7      |   207|
+|2     |CARRY4     |    21|
+|3     |LUT1       |    16|
+|4     |LUT2       |   323|
+|5     |LUT3       |   317|
+|6     |LUT4       |   355|
+|7     |LUT5       |   459|
+|8     |LUT6       |  1966|
+|9     |MUXF7      |   206|
 |10    |MUXF8      |    39|
 |11    |RAMB36E1   |     1|
 |12    |RAMB36E1_1 |     1|
@@ -1428,96 +1487,99 @@ Report Cell Usage:
 |14    |RAMB36E1_3 |     1|
 |15    |FDCE       |    68|
 |16    |FDPE       |     6|
-|17    |FDRE       |   559|
-|18    |IBUF       |     6|
-|19    |OBUF       |    43|
+|17    |FDRE       |   528|
+|18    |FDSE       |     1|
+|19    |IBUF       |     6|
+|20    |OBUF       |    29|
+|21    |OBUFT      |    14|
 +------+-----------+------+
 
 Report Instance Areas: 
-+------+-----------------------+------------------------------+------+
-|      |Instance               |Module                        |Cells |
-+------+-----------------------+------------------------------+------+
-|1     |top                    |                              |  4411|
-|2     |  clk_dvvv             |clock_divider                 |    51|
-|3     |  get_tx               |uart_tx                       |    62|
-|4     |  keyboard_io_         |keyboard_io                   |    32|
-|5     |  ram_                 |ram                           |     4|
-|6     |  ssd                  |seven_seg_display             |    70|
-|7     |    cd                 |clock_divider__parameterized0 |    51|
-|8     |  tx_con               |uart_buf_con                  |    78|
-|9     |  uut                  |PS2Receiver                   |    98|
-|10    |    db_clk             |debouncer                     |    15|
-|11    |    db_data            |debouncer_27                  |    16|
-|12    |  vga                  |vga_test                      |  1430|
-|13    |    vga_sync_unit      |vga_sync                      |  1430|
-|14    |  z80_                 |z80_top_direct_n              |  2511|
-|15    |    address_latch_     |address_latch                 |    45|
-|16    |    address_pins_      |address_pins                  |    41|
-|17    |    alu_               |alu                           |    38|
-|18    |    alu_control_       |alu_control                   |     2|
-|19    |    alu_flags_         |alu_flags                     |    19|
-|20    |    clk_delay_         |clk_delay                     |     3|
-|21    |    data_pins_         |data_pins                     |     8|
-|22    |    decode_state_      |decode_state                  |    21|
-|23    |    execute_           |execute                       |  1215|
-|24    |    interrupts_        |interrupts                    |    21|
-|25    |    ir_                |ir                            |   292|
-|26    |    memory_ifc_        |memory_ifc                    |    75|
-|27    |    reg_control_       |reg_control                   |     7|
-|28    |    reg_file_          |reg_file                      |   357|
-|29    |      b2v_latch_af2_hi |reg_latch                     |     8|
-|30    |      b2v_latch_af2_lo |reg_latch_0                   |     8|
-|31    |      b2v_latch_af_hi  |reg_latch_1                   |     8|
-|32    |      b2v_latch_af_lo  |reg_latch_2                   |     8|
-|33    |      b2v_latch_bc2_hi |reg_latch_3                   |    16|
-|34    |      b2v_latch_bc2_lo |reg_latch_4                   |    16|
-|35    |      b2v_latch_bc_hi  |reg_latch_5                   |     8|
-|36    |      b2v_latch_bc_lo  |reg_latch_6                   |     8|
-|37    |      b2v_latch_de2_hi |reg_latch_7                   |     8|
-|38    |      b2v_latch_de2_lo |reg_latch_8                   |     8|
-|39    |      b2v_latch_de_hi  |reg_latch_9                   |    16|
-|40    |      b2v_latch_de_lo  |reg_latch_10                  |    16|
-|41    |      b2v_latch_hl2_hi |reg_latch_11                  |     8|
-|42    |      b2v_latch_hl2_lo |reg_latch_12                  |     8|
-|43    |      b2v_latch_hl_hi  |reg_latch_13                  |     8|
-|44    |      b2v_latch_hl_lo  |reg_latch_14                  |     8|
-|45    |      b2v_latch_ir_hi  |reg_latch_15                  |    16|
-|46    |      b2v_latch_ir_lo  |reg_latch_16                  |    16|
-|47    |      b2v_latch_ix_hi  |reg_latch_17                  |    16|
-|48    |      b2v_latch_ix_lo  |reg_latch_18                  |    16|
-|49    |      b2v_latch_iy_hi  |reg_latch_19                  |     8|
-|50    |      b2v_latch_iy_lo  |reg_latch_20                  |     8|
-|51    |      b2v_latch_pc_hi  |reg_latch_21                  |     8|
-|52    |      b2v_latch_pc_lo  |reg_latch_22                  |    29|
-|53    |      b2v_latch_sp_hi  |reg_latch_23                  |     8|
-|54    |      b2v_latch_sp_lo  |reg_latch_24                  |     8|
-|55    |      b2v_latch_wz_hi  |reg_latch_25                  |    32|
-|56    |      b2v_latch_wz_lo  |reg_latch_26                  |    32|
-|57    |    resets_            |resets                        |    26|
-|58    |    sequencer_         |sequencer                     |   340|
-+------+-----------------------+------------------------------+------+
++------+-----------------------+------------------+------+
+|      |Instance               |Module            |Cells |
++------+-----------------------+------------------+------+
+|1     |top                    |                  |  4362|
+|2     |  clock_gen            |clock_generator   |     8|
+|3     |  get_tx               |uart_tx           |    59|
+|4     |  keyboard_io_         |keyboard_io       |    24|
+|5     |  nolabel_line217      |vga_io            |     4|
+|6     |  ram_                 |ram               |     4|
+|7     |  ssd                  |seven_seg_display |    70|
+|8     |    cd                 |clock_divider     |    51|
+|9     |  tx_con               |uart_buf_con      |    77|
+|10    |  uut                  |PS2Receiver       |    96|
+|11    |    db_clk             |debouncer         |    15|
+|12    |    db_data            |debouncer_27      |    24|
+|13    |  vga                  |vga_test          |  1432|
+|14    |    vga_sync_unit      |vga_sync          |  1432|
+|15    |  z80_                 |z80_top_direct_n  |  2510|
+|16    |    address_latch_     |address_latch     |    44|
+|17    |    address_pins_      |address_pins      |    48|
+|18    |    alu_               |alu               |    38|
+|19    |    alu_control_       |alu_control       |     2|
+|20    |    alu_flags_         |alu_flags         |    19|
+|21    |    clk_delay_         |clk_delay         |     3|
+|22    |    data_pins_         |data_pins         |     8|
+|23    |    decode_state_      |decode_state      |    21|
+|24    |    execute_           |execute           |  1213|
+|25    |    interrupts_        |interrupts        |    21|
+|26    |    ir_                |ir                |   293|
+|27    |    memory_ifc_        |memory_ifc        |    67|
+|28    |    reg_control_       |reg_control       |     7|
+|29    |    reg_file_          |reg_file          |   353|
+|30    |      b2v_latch_af2_hi |reg_latch         |     8|
+|31    |      b2v_latch_af2_lo |reg_latch_0       |     8|
+|32    |      b2v_latch_af_hi  |reg_latch_1       |     8|
+|33    |      b2v_latch_af_lo  |reg_latch_2       |     8|
+|34    |      b2v_latch_bc2_hi |reg_latch_3       |    16|
+|35    |      b2v_latch_bc2_lo |reg_latch_4       |    16|
+|36    |      b2v_latch_bc_hi  |reg_latch_5       |     8|
+|37    |      b2v_latch_bc_lo  |reg_latch_6       |     8|
+|38    |      b2v_latch_de2_hi |reg_latch_7       |     8|
+|39    |      b2v_latch_de2_lo |reg_latch_8       |     8|
+|40    |      b2v_latch_de_hi  |reg_latch_9       |    16|
+|41    |      b2v_latch_de_lo  |reg_latch_10      |    16|
+|42    |      b2v_latch_hl2_hi |reg_latch_11      |     8|
+|43    |      b2v_latch_hl2_lo |reg_latch_12      |     8|
+|44    |      b2v_latch_hl_hi  |reg_latch_13      |     8|
+|45    |      b2v_latch_hl_lo  |reg_latch_14      |     8|
+|46    |      b2v_latch_ir_hi  |reg_latch_15      |    16|
+|47    |      b2v_latch_ir_lo  |reg_latch_16      |    16|
+|48    |      b2v_latch_ix_hi  |reg_latch_17      |    16|
+|49    |      b2v_latch_ix_lo  |reg_latch_18      |    16|
+|50    |      b2v_latch_iy_hi  |reg_latch_19      |     8|
+|51    |      b2v_latch_iy_lo  |reg_latch_20      |     8|
+|52    |      b2v_latch_pc_hi  |reg_latch_21      |     8|
+|53    |      b2v_latch_pc_lo  |reg_latch_22      |    26|
+|54    |      b2v_latch_sp_hi  |reg_latch_23      |     8|
+|55    |      b2v_latch_sp_lo  |reg_latch_24      |     8|
+|56    |      b2v_latch_wz_hi  |reg_latch_25      |    32|
+|57    |      b2v_latch_wz_lo  |reg_latch_26      |    31|
+|58    |    resets_            |resets            |    26|
+|59    |    sequencer_         |sequencer         |   346|
++------+-----------------------+------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:05:55 ; elapsed = 00:06:01 . Memory (MB): peak = 1958.207 ; gain = 575.973 ; free physical = 1420 ; free virtual = 9980
+Finished Writing Synthesis Report : Time (s): cpu = 00:05:25 ; elapsed = 00:05:32 . Memory (MB): peak = 1958.547 ; gain = 628.848 ; free physical = 1171 ; free virtual = 9436
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 41 critical warnings and 30 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:05:49 ; elapsed = 00:05:55 . Memory (MB): peak = 1958.207 ; gain = 264.605 ; free physical = 1471 ; free virtual = 10031
-Synthesis Optimization Complete : Time (s): cpu = 00:05:55 ; elapsed = 00:06:01 . Memory (MB): peak = 1958.215 ; gain = 575.973 ; free physical = 1479 ; free virtual = 10039
+Synthesis finished with 0 errors, 41 critical warnings and 59 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:05:20 ; elapsed = 00:05:26 . Memory (MB): peak = 1958.547 ; gain = 316.480 ; free physical = 1222 ; free virtual = 9487
+Synthesis Optimization Complete : Time (s): cpu = 00:05:25 ; elapsed = 00:05:32 . Memory (MB): peak = 1958.555 ; gain = 628.848 ; free physical = 1231 ; free virtual = 9496
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 284 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 270 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1958.215 ; gain = 0.000 ; free physical = 1418 ; free virtual = 9979
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1958.555 ; gain = 0.000 ; free physical = 1170 ; free virtual = 9435
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-263 Infos, 73 Warnings, 42 Critical Warnings and 0 Errors encountered.
+268 Infos, 115 Warnings, 42 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:05:57 ; elapsed = 00:06:03 . Memory (MB): peak = 1958.215 ; gain = 576.125 ; free physical = 1485 ; free virtual = 10045
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1958.215 ; gain = 0.000 ; free physical = 1485 ; free virtual = 10045
+synth_design: Time (s): cpu = 00:05:28 ; elapsed = 00:05:34 . Memory (MB): peak = 1958.555 ; gain = 629.000 ; free physical = 1237 ; free virtual = 9503
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1958.555 ; gain = 0.000 ; free physical = 1237 ; free virtual = 9503
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/pisit/Documents/pong-game/final-project/final-project.runs/synth_1/system.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file system_utilization_synth.rpt -pb system_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon May 20 14:05:52 2019...
+INFO: [Common 17-206] Exiting Vivado at Mon May 20 20:11:53 2019...

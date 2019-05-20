@@ -68,6 +68,7 @@ read_verilog -library xil_defaultlib {
   /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/bus_switch.v
   /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/clk_delay.v
   /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/clock_divider.v
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/clock_generator.v
   /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/control_pins_n.v
   /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/data_pins.v
   /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/data_switch.v
@@ -95,6 +96,7 @@ read_verilog -library xil_defaultlib {
   /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/hdl/uart_buf_con.v
   /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/hdl/uart_tx.v
   /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/new/vga.v
+  /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/vga_io.v
   /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/imports/z80/z80_top_direct_n.v
   /home/pisit/Documents/pong-game/final-project/final-project.srcs/sources_1/new/system.v
 }
